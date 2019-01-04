@@ -4,8 +4,8 @@ root: .
 ---
 
 The best way to learn how to program is to do something useful,
-so this introduction to Python is built around a common scientific task:
-**data analysis**.
+so this introduction to LaTeX is built around a common scientific task:
+**publication preparation**.
 
 ### Arthritis Inflammation
 We are studying **inflammation in patients** who have been given a new treatment for arthritis, and
@@ -28,17 +28,18 @@ So, we want to:
 1. Calculate the average inflammation per day across all patients.
 2. Plot the result to discuss and share with colleagues.
 
-To do all that, we'll have to learn a little bit about programming.
+To do all that, we'll have to learn a little bit about document creation.
 
 > ## Prerequisites
 >
-> You need to understand the concepts of **files** and **directories** and how to start a Python
-> interpreter before tackling this lesson. This lesson sometimes references Jupyter
-> Notebook although you can use any Python interpreter mentioned in the [Setup](setup/).
+> You need to understand the concepts of **files** and **directories** and how to start a LaTeX
+> compiler before tackling this lesson. This lesson sometimes references Overleaf
+> although you can use any LaTeX compiler mentioned in the [Setup](setup/).
 >
-> The commands in this lesson pertain to **Python 3**.
+> The commands in this lesson pertain to **LaTeX2e**.  Compilation will be done with **pdflatex**
 {: .prereq}
 
 ### Getting Started
-To get started, follow the directions on the "[Setup](setup/)" page to download data
-and install a Python interpreter.
+To get started, follow the directions on the "[Setup](setup/)" page to download data.  If you are
+using Overleaf, you will not have to download a LaTeX compiler to your computer.  If you already
+have a preferred editor, you can use that.
