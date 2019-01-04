@@ -1,0 +1,91 @@
+---
+layout: page
+title: Setup
+permalink: /setup/
+root: ..
+---
+
+### Obtain lesson materials
+
+1. Download [python-novice-inflammation-data.zip][zipfile1]
+        and [python-novice-inflammation-code.zip][zipfile2].
+2. Create a folder called `swc-python` on your Desktop.
+3. Move downloaded files into this newly created folder.
+4. Unzip the files.
+
+You should now see two new folders called `data` and `code` in your `swc-python` directory on your
+Desktop.
+
+&nbsp; <!-- vertical spacer -->
+
+### Navigate to the `data` folder
+
+If you're using a Unix shell application, such as Terminal app in macOS, Console or Terminal in
+Linux, or [Git Bash](https://gitforwindows.org/) on Windows, execute the following command:
+
+~~~
+$ cd ~/Desktop/swc-python/data
+~~~
+{: .source}
+
+On Windows, you can use its native Command Prompt program.  The easiest way to start it up is by
+pressing <kbd>Windows Logo Key</kbd>+<kbd>R</kbd>, entering `cmd`, and hitting <kbd>Enter</kbd>. In
+the Command Prompt, use the following command to navigate to the `data` folder:
+~~~
+$ cd /D %userprofile%\Desktop\swc-python\data
+~~~
+{: .source}
+
+&nbsp; <!-- vertical spacer -->
+
+### Option 1: Launch Plain Vanilla Python interpreter
+
+To start working with Python, we need to launch a program that will interpret and execute our Python
+commands. To launch a "plain vanilla" Python interpreter, execute:
+~~~
+$ python
+~~~
+{: .source}
+
+If you are using Git Bash on Windows, you have to call Python _via_ `winpty`:
+~~~
+$ winpty python
+~~~
+{: .source}
+
+&nbsp; <!-- vertical spacer -->
+
+### Option 2: Start Jupyter notebook
+
+Jupyter notebooks provide a browser-based interface for working with Python.  If you would like to
+use a notebook during the lesson, make sure to install [Anaconda
+Distribution](http://carpentries.github.io/workshop-template/#python).
+
+To start a Jupyter server, execute:
+~~~
+$ jupyter notebook
+~~~
+{: .source}
+
+Then create a new notebook by clicking "New" button on the right and selecting "Python 3" from the
+drop-down menu:
+
+![](../fig/new-notebook.png)
+
+&nbsp; <!-- vertical spacer -->
+
+### Option 3: Start IPython interpreter
+
+IPython is an alternative solution situated somewhere in between the plain vanilla Python
+interpreter and Jupyter notebooks.  It provides an interactive command-line based interpreter with
+various convenience features and commands.  You should have IPython on your system if you installed
+[Anaconda Distribution](http://carpentries.github.io/workshop-template/#python).
+
+To start using IPython, execute:
+~~~
+$ ipython
+~~~
+{: .source}
+
+[zipfile1]: {{ page.root }}/data/python-novice-inflammation-data.zip
+[zipfile2]: {{ page.root }}/code/python-novice-inflammation-code.zip 
