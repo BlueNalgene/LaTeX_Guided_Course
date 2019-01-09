@@ -7,7 +7,7 @@ root: ..
 
 ### Obtain lesson materials
 
-1. Download [LaTeX_Guided_Course-buildingblocks.zip][buildingblocks].
+1. Download [zipfile1][test].
 2. Create a folder called `LaTeX-Intro` on your Desktop.
 3. Move downloaded files into this newly created folder.
 4. Unzip the files.
@@ -37,7 +37,19 @@ $ cd /D %userprofile%\Desktop\LaTeX-Intro\buildingblocks
 
 &nbsp; <!-- vertical spacer -->
 
-### Option 1: Launch Plain Vanilla Text editor
+### Option 1: Start Overleaf Project
+
+[Overleaf](https://www.overleaf.com/) is an online service which allows for collaborative LaTeX document
+creation and editing.  It is free to use for individuals.  On the website, register an account and/or log in.
+
+Start a new document by clicking on `New Project` and choose `Blank Project`.  Enter a title like
+`LaTeX-Intro`.
+
+You can edit the document directly on the source page which comes up.  It will compile as you go along.
+
+&nbsp; <!-- vertical spacer -->
+
+### Option 2: Launch Plain Vanilla Text editor
 
 To start working with LaTeX, we need to launch a program that will allow us to edit our LaTeX
 commands. This will likely be the default text editor on your system.  In a unix terminal, we will
@@ -53,17 +65,5 @@ the `pdflatex` command.
 $ pdflatex %ourTeXfile%
 ~~~
 {: .source}
-
-&nbsp; <!-- vertical spacer -->
-
-### Option 2: Start Overleaf Project
-
-[Overleaf](https://www.overleaf.com/) is an online service which allows for collaborative LaTeX document
-creation and editing.  It is free to use for individuals.  On the website, register an account and/or log in.
-
-Start a new document by clicking on `New Project` and choose `Blank Project`.  Enter a title like
-`LaTeX-Intro`.
-
-You can edit the document directly on the source page which comes up.  It will compile as you go along.
 
 [zipfile1]: {{ page.root }}/buildingblocks/LaTeX_Guided_Course-buildingblocks.zip.zip
