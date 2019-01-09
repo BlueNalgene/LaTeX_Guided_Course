@@ -24,7 +24,15 @@ keypoints:
 - "Change the typeface to `courier`"
 - "Change text size with `\Large`"
 - "Format with `\textbf`, `\textit`, `\underline`, `\emph`"
-
+- "Align some text to the right with `\raggedright`"
+- "Separate a single paragraph into two with a double return"
+- "Break lines manually using `\\`"
+- "Create hyphenation for new words with `\hyphenation`"
+- "Use ` and ' to create proper quotes"
+- "Use `\%` to display percentages"
+- "Create a diacritic character such as `\^o`"
+- "Properly use an em and an en dash"
+- "Force a nonbreaking space with `~`"
 
 ---
 
