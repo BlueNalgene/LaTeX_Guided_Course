@@ -4,7 +4,6 @@ teaching: 00
 exercises: 00
 questions:
 - "How do I start a LaTeX document?"
-
 objectives:
 - "Explain the sections of a LaTeX document"
 - "Understand how LaTeX distinguishes text from command"
@@ -19,17 +18,16 @@ objectives:
 - "Learn where to read more about libraries"
 - "Use custom library functions"
 - "Compile a document for the first time and save the PDF."
-
 keypoints:
 - "Comment text with `%`"
-- "Create a simple document with `\documentclass`"
-- "Distinguish preamble from `\begin{document}` ... `\end{document}`"
-- "Use a `\maketitle` section."
+- "Create a simple document with `documentclass`"
+- "Distinguish preamble from `begin{document}` ... `end{document}`"
+- "Use a `maketitle` section."
 - "Use various document classes such as `article`, `report`, and `beamer`"
 - "Import a custom `.cls` file"
-- "Create Sections in a document with `\section`"
-- "Use the non-standard library `\import{textcase}'"
-- "Use a command from an imported library '\MakeTextUppercase'"
+- "Create Sections in a document with `section`"
+- "Use the non-standard library `import{textcase}'"
+- "Use a command from an imported library 'MakeTextUppercase'"
 - "Export a compiled document as a PDF"
 
 ---

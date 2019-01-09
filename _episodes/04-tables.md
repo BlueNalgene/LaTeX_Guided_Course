@@ -4,9 +4,8 @@ teaching: 00
 exercises: 00
 questions:
 - "How do I add a table to my document?"
-
 objectives:
-- "Learn how to make a bulleted list.
+- "Learn how to make a bulleted list"
 - "Learn how to make an itemized list"
 - "Learn how to make a descriptive list"
 - "Know how tables are arranged in LaTeX"
@@ -16,8 +15,7 @@ objectives:
 - "Deal with linebreaking within cells"
 - "Make tables with multi-row or column stretches"
 - "Adjust sizes, spacing, and placement of a table"
-
 keypoints:
-
+- "test"
 
 ---
