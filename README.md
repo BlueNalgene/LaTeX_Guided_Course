@@ -9,6 +9,6 @@ program before attending course.
 
 This instructional session assumes the user is aware of LaTeX and the benefits of it's use.  It does not attempt
 to 'sell' the user on LaTeX over other options.  Comparisons to other document creation programs (e.g. Microsoft
-Word) is discouraged.
+Word) are discouraged.
 
 <https://BlueNalgene.github.io/LaTeX_Guided_Course/>
