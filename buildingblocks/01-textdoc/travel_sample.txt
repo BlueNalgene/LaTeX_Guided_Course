@@ -307,3 +307,64 @@ be due either to the whiting or the soap employed, add a little water
 until a paste is made which can be run into an iron or wooden mould.
 This will remove rust from steel and give it a good polish.--Oils,
 Colors and Drysalteries.
+
+
+
+
+
+
+
+Elliptical Integrals of the Second Order
+by Arthur L. Baker, an excerpt of a chapter from Elliptic Functions
+
+Landen's Transformation can also be applied to Elliptic Integrals of this class.
+
+elleqn01
+
+After a series of trivial steps, we arrive at:
+
+elleqn02
+
+By successive applications of elleqn02, Ekphi may be made to depend ultimately upon Ek0nphin, where k0n approximates to zero and Ek0nphin to phin.
+
+Or, by reversing, it may be made to depend upon Eknphi0n, where kn approximates to unity and Eknphi0n to cosphi0n.
+
+To facilitate this, assume
+
+elleqn03
+
+Subtracting from the equation
+
+elleqn04
+
+we have
+
+elleqn05
+
+Repeated applications of this give
+
+elleqn06
+
+Whence
+
+elleqn07
+
+But since
+
+elleqn08
+
+or
+
+elleqn09
+
+and since, also,
+
+elleqn10
+
+we have
+
+elleqn11
+
+elleqn12
+
+With substitution of identities into this form, we can arrive at our answer.
