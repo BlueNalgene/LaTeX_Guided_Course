@@ -2,8 +2,10 @@
 title: Continued Formatting
 teaching: 00
 exercises: 00
+
 questions:
 - "How do I perform more advanced formatting with LaTeX?"
+
 objectives:
 - "Learn how LaTeX handles fonts and sizes"
 - "Learn the most basic text formatting functions"
@@ -17,6 +19,7 @@ objectives:
 - "Use the various dash signs"
 - "Learn simple spacing commands"
 - "Learn to enable/disable ligatures"
+
 keypoints:
 - "Change the typeface to `courier`"
 - "Change text size with `Large`"
@@ -49,15 +52,15 @@ Huge	sample text
 LaTeX command	Equivalent switch	Output style	Remarks
 textnormal{...}	{normalfont ...}	document font family	This is the default or normal font.
 emph{...}	{em ...}	emphasis	Typically italics. Using emph{} inside of italic text removes the italics on the emphasized text.
-textrm{...}	{rmfamily ...}	roman font family	
-textsf{...}	{sffamily ...}	sans serif font family	
+textrm{...}	{rmfamily ...}	roman font family
+textsf{...}	{sffamily ...}	sans serif font family
 texttt{...}	{ttfamily ...}	teletypefont family	This is a fixed-width or monospace font.
 textup{...}	{upshape ...}	upright shape	The same as the normal typeface.
-textit{...}	{itshape ...}	italic shape	
+textit{...}	{itshape ...}	italic shape
 textsl{...}	{slshape ...}	slanted shape	A skewed version of the normal typeface (similar to, but slightly different from, italics).
-textsc{...}	{scshape ...}	Small Capitals	
+textsc{...}	{scshape ...}	Small Capitals
 uppercase{...}		UPPERCASE (ALL CAPS)	Also lowercase. There are some caveats, though; see here.
-textbf{...}	{bfseries ...}	bold	
+textbf{...}	{bfseries ...}	bold
 textmd{...}	{mdseries ...}	medium weight	The normal font weight.
 textlf{...}	{lfseries ...}	light	A font weight lighter than normal. Not supported by all typefaces.
 textsubscript{} and textsuperscript{}
@@ -84,7 +87,7 @@ pounds	n/a	£
 }	{displaystyle }} }	}
 S	{displaystyle S } S 	§
 dag	n/a	†
-textbackslash	n/a	
+textbackslash	n/a
 textless	{displaystyle <} <	<
 textemdash	n/a	—
 textregistered	n/a	®
