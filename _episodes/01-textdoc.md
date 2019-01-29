@@ -2,8 +2,10 @@
 title: Simple Text Document
 teaching: 00
 exercises: 00
+
 questions:
 - "How do I start a LaTeX document?"
+
 objectives:
 - "Explain the sections of a LaTeX document"
 - "Understand how LaTeX distinguishes text from command"
@@ -18,6 +20,7 @@ objectives:
 - "Learn where to read more about libraries"
 - "Use custom library functions"
 - "Compile a document for the first time and save the PDF."
+
 keypoints:
 - "Comment text with `%`"
 - "Create a simple document with `documentclass`"
