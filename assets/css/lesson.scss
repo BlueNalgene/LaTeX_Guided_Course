@@ -45,6 +45,7 @@ $color-testimonial: #fc8dc1 !default;
 .python, .language-python { @include cdSetup($color-source); }
 .r, .language-r           { @include cdSetup($color-source); }
 .sql, .language-sql       { @include cdSetup($color-source); }
+.tex, .language-tex       { @include cdSetup($color-source); }
 
 .error pre,
 .output pre,
@@ -60,7 +61,9 @@ $color-testimonial: #fc8dc1 !default;
 .r pre,
 .language-r pre,
 .sql pre ,
-.language-sql pre {
+.language-sql pre ,
+.tex pre ,
+.language-tex pre {
   border-radius: 0 4px 4px 0;
 }
 

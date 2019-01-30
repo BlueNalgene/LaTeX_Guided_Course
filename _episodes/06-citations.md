@@ -30,7 +30,7 @@ keypoints:
 - "Reference a figure number in text by labeling it with `label` and calling it with `ref`"
 - "Create a BibTeX entry manually with `bibitem` within `thebibliography` environment"
 - "Create a bibliography in the text with `bibliography` and `bibliographystyle`"
-- "Import a premade `.bib` file with `bibliography`.
+- "Import a premade `.bib` file with `bibliography`"
 - "Create an inline citation number with `cite`"
 - "Place a citation in a footnote using `footnote{cite{}}`"
 - "Change they way the citation appears with `natbib`"
