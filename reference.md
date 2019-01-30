@@ -7,6 +7,39 @@ root: ..
 ## Glossary
 
 {:auto_ids}
+
+argument
+:   A value given to a function or command when it runs.
+
+environment
+:   placeholder
+
+escape sequence
+:   placeholder
+
+LaTeX
+:   placeholder
+
+markdown language
+:   placeholder
+
+math mode
+:   placeholder
+
+preamble
+:   placeholder
+
+WYSIWYG
+:   placeholder
+
+.tex
+:   placeholder
+
+
+
+
+
+
 additive color model
 :   A way to represent colors as the sum of contributions from primary colors
     such as [red, green, and blue](#rgb).
@@ -20,7 +53,7 @@ assertion
     Programmers typically put assertions in their code to check for errors;
     if the assertion fails (i.e., if the expression evaluates as false),
     the program halts and produces an error message.
-    See also: [invariant](#invariant), [precondition](#precondition), 
+    See also: [invariant](#invariant), [precondition](#precondition),
     [postcondition](#postcondition).
 
 assign
@@ -186,7 +219,7 @@ regression
 :   To re-introduce a bug that was once fixed.
 
 return statement
-:   A statement that causes a function to stop executing and return a value 
+:   A statement that causes a function to stop executing and return a value
     to its caller immediately.
 
 RGB
@@ -254,7 +287,7 @@ tuple
 
 type
 :   The classification of something in a program (for example, the contents of a variable)
-    as a kind of number (e.g. [floating-point](#float), [integer](#integer)), 
+    as a kind of number (e.g. [floating-point](#float), [integer](#integer)),
     [string](#string), or something else.
 
 type of error
