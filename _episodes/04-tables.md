@@ -33,3 +33,10 @@ keypoints:
 - "Influence page position with float positioning arguments `h`, `t`, `b`, and `p`"
 
 ---
+
+
+		\begin{itemize}
+			\item[\meow] My cat's name is Leon
+			\item[\meow] He is a handsome little man
+			\item[\meow] Also a jerk
+		\end{itemize}
