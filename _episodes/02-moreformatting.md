@@ -146,8 +146,8 @@ names.  When we call a new font size from `tiny` to `Huge`
 
 #### Relative Typeface Sizes
 
-| Commands (smallest to Largest) |
-|:------------------------------:|
+| Commands (Smallest to Largest)  |
+|:-------------------------------:|
 |               \tiny             |
 |            \scriptsize          |
 |           \footnotesize         |
@@ -476,7 +476,11 @@ The correct way to use this table is to view the HTML output.-->
 
 ## Hyphenation Differentiation
 
-
+In English, different hyphens are used for different meanings.  These can be printed in the text
+by including different numbers of short hyphens in the code.  The obvious outlier here is the minus
+sign.  Using math requires entering [math mode](), something which will be covered in more detail
+later.  For now, it is worthwhile to note that math symbols can be used within the text by
+surrounding the symbol with the dollar sign (`$`).
 
 #### Table of Dashes
 
@@ -489,23 +493,42 @@ The correct way to use this table is to view the HTML output.-->
 
 ## Controlling Space
 
-\\
+Often it is important to control the space around words and blocks of text in a document.  We can
+group instances in which this is important into horizontal space (left and right) and vertical
+space (above and below).
 
-~
+### Horizontal Space
 
+As should be apparent, LaTeX respects spaces between words written in the code.  However, there are
+limits.  Consecutve spaces grouped together are treated as a single space.  This allows LaTeX to
+always print a correct looking document, no matter how a user chooses to space out their words.  If
+an extra space is required, LaTeX needs to be told this.  Entering the tilde (`~`) into the code
+tells LaTeX to add another space, no matter the circumstances.
 
+This has a secondary use.  Some words should appear together on a line to make sense, such as
+acronyms and names.  By replacing the normal space with the tilde, we treat those words as a
+single string when it comes to wrapping the text on the page, yet still print a space between each
+word.
 
+### Vertical Space
 
+Controlling vertical space is similar to horizontal space.  As we discussed early in this section,
+LaTeX requires double returns to break a paragraph, and a line break can be forced with `\\`.
+One caveat is that each forced line break must include something on the next line.  Therefore the
+sequence `\\\\` is meaningless and will cause errors.  If you want to skip more than one line
+without including any text on the next line, the simplest way to do this is with a tilde.  The
+sequence `\\~\\` will skip two lines.
 
+Another convenient vertical spacer is the skip.  Using the command `\smallskip`, `\medskip`, or
+`\bigskip` will produce a small, medium, or large blank space between lines of text.  This is
+useful for distinguishing portions of a document.  The lengths of these skips are dependent on
+the `documentclass` you are writing in.
 
+The largest vertical spacer available is the `\newpage` command.  As you might expect, this forces
+LaTeX to end the current page and start a new one at that point.
 
-
-
-
-
-
-
-
+There are many other options for controlling space, with much more refinement.  However, that
+begins to get more complicated than we will cover in this course.  For now, stick with these.
 
 
 
