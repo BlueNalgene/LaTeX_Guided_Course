@@ -43,32 +43,150 @@ keypoints:
 
 ## When and How Lines Break
 
+Remember that LaTeX files are like code, this means that they are compiled like code.  In many
+programming languages, line endings do not mean the code stops compiling.  Similarly, in LaTeX, a
+single line ending will continue the same block of text as the first line.  This is convenient for
+text editors that do not have automatic line breaking enabled (e.g. Windows Notepad).  So how do we
+start a new paragraph in LaTeX?  Easy, use **two** newline or carriage returns (i.e. press Enter
+twice).
 
+~~~
+\documentclass{article}
+\begin{document}
+  This line and
+  this line are the same paragraph
+
+  We use two newlines to start a new paragraph
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture -->
+
+We can also manually break lines with the `\\` command.  This special character allows us to
+include a line break within a line of our LaTeX code.
+
+~~~
+\documentclass{article}
+\begin{document}
+  This line of code\\is broken into two paragraphs
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture -->
 
 ## Typeface Controls
 
+In modern [WYSIWYG]({{ page.root }}/reference/#WYSIWYG) editors, we are used to having many choices
+for typefaces and font size.  LaTeX keeps things clean and simple, by limiting our options.  When
+the original TeX was invented, there was no format for fonts like exist today.  Indeed, the
+`pdflatex` command we are using to compile our documents does not support custom fonts without a
+bit of work.  But that is ok!  For academic work, using complicated typefaces can actually distract
+from the content.
 
+For our work, we will limit our choices to the following:
+
+#### Font Families
+
+|   Family   |           Definition             |
+|:-----------|:---------------------------------|
+| \rmdefault | "Roman" or "Serif" font, default |
+| \sfdefault | "Sans Serif" font                |
+| \ttdefault | "Monospace" font                 |
+
+We can switch between these font families in the body of the `document` by telling LaTeX to renew
+which font it will be using.
+
+~~~
+\documentclass{article}
+\begin{document}
+  This text will be serif.
+  \renewcommand{\familydefault}{\sfdefault}
+  This text will be sans serif.
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture -->
+
+When we call this `renewcommand` line, it will begin using that font family for the rest of the
+document, or until another `renewcommand` is called.
+
+> If you want to use a different typeface than the default LaTeX one called `Computer Modern`, you
+> must call a package which interprets font file types such as `.ttf` correctly.  This package is
+> called `fontspec`.  Using `fontspec`, we can tell LaTeX to assign different `.ttf` files to the
+> various font families.  However, if you want to do this you **must use `xelatex` or `lualatex`**.
+> These are alternatives to the `pdflatex` we will be using for the duration of this material.
+> Therefore, we will not be covering it in detail here.  Consult the documentation of your LaTeX
+> editor for how to change it into `xelatex` or `lualatex` mode.
+> ~~~
+> \documentclass{article}
+> \usepackage{fontspec}
+> \setmainfont[
+>   Ligatures=TeX,
+>   UprightFont = Courier-Boo,
+>   ItalicFont = Courier-BooObl,
+>   SmallCapsFont = CourierSC-Boo,
+>   BoldFont = Courier-Dem,
+>   BoldItalicFont = Courier-DemObl
+> ]
+> \begin{document}
+>   We will now use the Courier font familes
+> \end{document}
+> ~~~
+> {: .language-tex}
+{: .callout}
+
+To change the size of the text when it is compiled, we need to change the font size.  In our
+[WYSIWYG]({{ page.root }}/reference/#WYSIWYG) editors, we are used to selecting the specific
+size of a font in point(pt) units.  However, in LaTeX, sizes are relative.  The smallest text
+in one kind of document class may be the largest in another.  Therefore, we use relative size
+names.  When we call a new font size from `tiny` to `Huge`
 
 #### Relative Typeface Sizes
 
 | Commands (smallest to Largest) |
 |:------------------------------:|
-|               tiny             |
-|            scriptsize          |
-|           footnotesize         |
-|              small             |
-|            normalsize          |
-|              large             |
-|              Large             |
-|              LARGE             |
-|               huge             |
-|               Huge             |
+|               \tiny             |
+|            \scriptsize          |
+|           \footnotesize         |
+|              \small             |
+|            \normalsize          |
+|              \large             |
+|              \Large             |
+|              \LARGE             |
+|               \huge             |
+|               \Huge             |
 
+Remember, that changing font size is like `renewcommand`.  When we change the font size for our
+document, the size change continues until we tell it otherwise.  If you wish to have a small
+portion of text a different size, you will need to switch back to `normalsize` when you are done.
 
+Alternatively, we can use curly braces to enclose our changes.  This will keep any size changes
+confined to a certain portion of text.
 
+~~~
+\documentclass{article}
+\begin{document}
+  We only want {\Huge these words} to be big.
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture -->
+
+> If you simply must use specific font sizes, you need to use a different compiler.  Like before,
+> `pdflatex` does not support font sizes beyond certain bounds.  If you want this kind of control,
+> you must use either `xelatex` or `lualatex`.
+{: .callout}
 
 ## Text Formatting (weight, shape, etc.)
 
+LaTeX can modify the format of the text in many of the usual ways including making text bold nad
+underlined.  To do this, we must call a command.  The text which is included between the curly
+braces at the end of the command will be in the format specified.  This is also a way to
+temporarily change the typeface family being used.
 
 #### A Table of Common Text Formatting Options
 
@@ -91,6 +209,15 @@ keypoints:
 | \textsubscript{}   | subscripted characters   |
 | \textsuperscript{} | superscripted characters |
 
+~~~
+\documentclass{article}
+\begin{document}
+  Some text is \textbf{bold}, and some is \emph{emphatic}.
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture -->
 
 ## Sections
 
@@ -156,6 +283,8 @@ increasing the counter and printing the section number, an asterisk (`*`) is add
 ~~~
 {: .language-tex}
 
+<!-- TODO add output picture??? The current output might be fine. -->
+
 ~~~
 1. Some Section
   Some text.
@@ -184,30 +313,97 @@ But not this section
 
 Color is not native to LaTeX, and must be handled by an external package.  There are several
 options for packages which handle color, but we will be using `xcolor`.  This is a modernized
-variant of the original `color` package.
+variant of the original `color` package.  To make some text have color, we use the command
+`textcolor`:
+
+~~~
+\documentclass{article}
+\usepackage{xcolor}
+\begin{document}
+  \textcolor{red}{This text will be red}
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture -->
+
+LaTeX knows only a few colors by default:
+
+#### Default Colors
+
+|    Color   |    Color   |    Color   |    Color   |
+|:----------:|:----------:|:----------:|:----------:|
+|    black   |    blue    |    brown   |    cyan    |
+|  darkgray  |    gray    |    green   |  lightgray |
+|    lime    |   magenta  |    olive   |   orange   |
+|    pink    |   purple   |     red    |    teal    |
+|   violet   |    white   |   yellow   |            |
+
+If we want to use another color, we need to make it.  Colors are made in different colorspaces
+such as `RGB` or `cmyk`.  We can mix colors in these colorspaces and assign them a name using
+`definecolor` in the preamble of our document.  The new color is named, we declare a colorspace,
+then we provide the values for that colorspace which represents our color. Each time we want to
+use the color, we can call it in the normal way.
+
+~~~
+\documentclass{article}
+\usepackage{xcolor}
+\definecolor{crimson}{RGB}{52, 9, 9}
+\begin{document}
+  \textcolor{crimson}{This text will be crimson}
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture -->
 
 
 ## Custom Dictionaries
 
+LaTeX is a powerful typesetting tool that automatically hyphenates words across new lines.  While
+some text editors simply break the line before a long word is used, LaTeX will try to hyphenate
+between syllables of the word.  This makes the output text look much cleaner and professional.
+However, LaTeX is not magic.  Not all words are defined syllabically in the dictionary.  When we
+use a word that is more complicated, and is in danger of making ugly line breaks, we need to tell
+LaTeX how to break the word apart.  We do this with the `hyphenation` command in the preamble.
+Each word is separated by a space.
 
+Certain words are more likely to need hyphenation.  These include proper nouns and words that
+are relatively "new".
 
+~~~
+\documentclass{article}
+\hyphenation{Ok-la-ho-ma che-mo-ther-apy}
+\begin{document}
+  Now if we want to write a really long sentance, the words chemotherapy and Oklahoma will be split
+  properly as we go from line to line.
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO add output picture, possibly modify text so that it shows line breaking -->
 
 ## Quotation Marks
 
-
+<!-- TODO consider languages and how to present this -->
 
 
 ## Fancy Characters with Escaped Sequences
 
+As we have seen, certain characters are used by the LaTeX code to do certain commands.  The percent
+sign (`%`) is used for comments and the curly braces (`{`, `}`) contain code.  What do we do if we
+want these characters in our text?  We need to use a special
+[escape sequences]({{ page.root }}/reference/#escape sequence) to introduce these characters.
+There are many of these types of characters, and they can be called in the text at any time.
 
 #### Table of Special Characters
 
 |       Command       | Character |
 |:--------------------|:---------:|
 | \%                  |   `%`     |
-| \$                  |   `$`     |
-| \{                  |   `{`     |
-| \_                  |   `_`     |
+| \\$                 |   `$`     |
+| \\{                 |   `{`     |
+| \\_                 |   `_`     |
 | \P                  |   `¶`     |
 | \ddag               |   `‡`     |
 | \textbar            |   `|`     |
@@ -215,11 +411,11 @@ variant of the original `color` package.
 | \textendash         |   `–`     |
 | \texttrademark      |   `™`     |
 | \textexclamdown     |   `¡`     |
-| \textsuperscript{a} |  `X^a`    |
+| \textsuperscript{2} |   `²`     |
 | \pounds             |   `£`     |
-| \#                  |   `#`     |
+| \\#                 |   `#`     |
 | \&                  |   `&`     |
-| \}                  |   `}`     |
+| \\}                 |   `}`     |
 | \S                  |   `§`     |
 | \dag                |   `†`     |
 | \textbackslash      |   `\`     |
@@ -231,34 +427,51 @@ variant of the original `color` package.
 | \copyright          |   `©`     |
 | \ldots              |  `. . .`  |
 
+<!--NOTE Several of these sequences use Markdown escape characters, and must be double escaped.
+The correct way to use this table is to view the HTML output.-->
 
+Since LaTeX is an old language, certain characters are not present within the default
+configuration.  These characters must be called using a package.  One notable example is the
+Euro currency sign.  This currency did not exist in the 1970's so we can't use it without
+defining it in a package.
+
+~~~
 \usepackage[gen]{eurosym}
+~~~
+{: .language-tex}
 
 ## Accented Letters
 
+Sometimes words used in the academic context use symbols that are outside of what is considered
+"normal" English orthography.  Many language use character accents to distinguish sounds that
+use similar vowels.  LaTeX is capable of generating these characters based on special sequences
+which modify existing letters.
 
 #### Table of Accented Characters
 
-| Command | Sample | Description                              |
-|---------|:------:|------------------------------------------|
-| \\`{o}  |   `ò`  | grave accent                             |
-| \'{o}   |   `ó`  | acute accent                             |
-| \^{o}   |   `ô`  | circumflex                               |
-| \"{o}   |   `ö`  | umlaut, trema or dieresis                |
-| \H{o}   |   `ő`  | long Hungarian umlaut (double acute)     |
-| \~{o}   |   `õ`  | tilde                                    |
-| \c{c}   |   `ç`  | cedilla                                  |
-| \k{a}   |   `ą`  | ogonek                                   |
-| \l{}    |   `ł`  | barred l (l with stroke)                 |
-| \={o}   |   `ō`  | macron accent (a bar over the letter)    |
-| \b{o}   |   `o`  | bar under the letter                     |
-| \.{o}   |   `ȯ`  | dot over the letter                      |
-| \d{u}   |   `ụ`  | dot under the letter                     |
-| \r{a}   |   `å`  | ring over the letter                     |
-| \u{o}   |   `ŏ`  | breve over the letter                    |
-| \v{s}   |   `š`  | caron/háček ("v") over the letter        |
-| \t{oo}  |  `o͡o`  | "tie" (inverted u) over the two letters  |
-| \o      |   `ø`  | slashed o (o with stroke)                |
+| Command |Sample| Description                              |
+|---------|:----:|------------------------------------------|
+| \\`{o}  |   ò  | grave accent                             |
+| \\'{o}  |   ó  | acute accent                             |
+| \^{o}   |   ô  | circumflex                               |
+| \\"{o}  |   ö  | umlaut, trema or dieresis                |
+| \H{o}   |   ő  | long Hungarian umlaut (double acute)     |
+| \\~{o}  |   õ  | tilde                                    |
+| \c{c}   |   ç  | cedilla                                  |
+| \k{a}   |   ą  | ogonek                                   |
+| \l{}    |   ł  | barred l (l with stroke)                 |
+| \\={o}  |   ō  | macron accent (a bar over the letter)    |
+| \b{o}   |   o  | bar under the letter                     |
+| \\.{o}  |   ȯ  | dot over the letter                      |
+| \d{u}   |   ụ  | dot under the letter                     |
+| \r{a}   |   å  | ring over the letter                     |
+| \u{o}   |   ŏ  | breve over the letter                    |
+| \v{s}   |   š  | caron/háček ("v") over the letter        |
+| \t{oo}  |  o͡o | "tie" (inverted u) over the two letters  |
+| \o      |   ø  | slashed o (o with stroke)                |
+
+<!--NOTE Several of these sequences use Markdown escape characters, and must be double escaped.
+The correct way to use this table is to view the HTML output.-->
 
 
 ## Hyphenation Differentiation
@@ -267,12 +480,12 @@ variant of the original `color` package.
 
 #### Table of Dashes
 
-| Input | Output | Purpose     |
-|:------|:------:|:------------|
-| -     |    -   | inter-word  |
-| --    |    –   | page range  |
-| ---   |    —   | punctuation |
-| $-$   |    −   | minus sign  |
+| Input   | Output | Purpose     |
+|:--------|:------:|:------------|
+| `-`     |    -   | inter-word  |
+| `--`    |    –   | page range  |
+| `---`   |    —   | punctuation |
+| `$-$`   |    −   | minus sign  |
 
 ## Controlling Space
 
