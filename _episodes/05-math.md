@@ -41,7 +41,8 @@ keypoints:
 |   ≈    | \approx                  |   ≅    | \cong                    |
 |   ≃    | \simeq                   |   ∼    | sim                      |
 
-
+<!--NOTE Several of these sequences use Markdown escape characters, and must be double escaped.
+The correct way to use this table is to view the HTML output.-->
 
 #### Inequalities
 
@@ -51,6 +52,8 @@ keypoints:
 |   ≤    | \leq                     |   ≥    | \geq                     |
 |   ≪    | \ll                      |   ≫    | \gg                     |
 
+<!--NOTE Several of these sequences use Markdown escape characters, and must be double escaped.
+The correct way to use this table is to view the HTML output.-->
 
 #### Sets
 
@@ -68,6 +71,8 @@ keypoints:
 |   ⊲    | \triangleleft            |   ⊳    | \triangleright           |
 |       | \bigcirc                 |   •    | \bullet                  |
 |   ∀    | \forall                  |
+
+<!-- TODO Is there a unicode equivalent for bigcirc? -->
 
 #### Set Equalities/Inequalities
 
@@ -121,7 +126,7 @@ keypoints:
 |   ⊗    | \otimes                  |   ∖    | \setminus                |
 |   ⊘    | \oslash                  |       | \amalg                   |
 
-
+<!-- TODO Is there a unicode equivalent for amalg? -->
 
 
 #### Delimiters
@@ -182,7 +187,7 @@ keypoints:
 |   ∭    | \iiint                   |   ⨌    | \iiiint                 |
 |   ∫⋯∫    | \idotsint              |
 
-
+<!-- TODO Is there a unicode equivalent for imath and jmath? -->
 
 
 
