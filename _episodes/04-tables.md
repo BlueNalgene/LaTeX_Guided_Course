@@ -40,3 +40,39 @@ keypoints:
 			\item[\meow] He is a handsome little man
 			\item[\meow] Also a jerk
 		\end{itemize}
+
+## Itemized Content
+
+
+### Itemized Lists
+
+
+### Enumerated Lists
+
+
+### Descriptive Lists
+
+
+## LaTeX Tables
+
+
+### Another Row? Another Line Break!
+
+
+### Ampersand Separation
+
+
+> It is a [best practice]({{ page.root }}/reference/#best practice) to organize your columns in
+> your LaTeX file by the size of their content.  This will make it easier for you to read and make
+> edits.  Most editors should use a monospace font, making this easy to implement.
+
+### Row Alignment
+
+
+### Horizontal and Vertical Separators
+
+
+### Stretching or Merging Cells
+
+
+## Float the Table

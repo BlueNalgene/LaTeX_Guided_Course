@@ -227,7 +227,7 @@ style.
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Maketitle Output](../fig/ep01im01.png)
 
 
 
@@ -252,7 +252,7 @@ can switch the simple title example from the section above from the `article` fo
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture from above, but with this output -->
+![Changing Class](../fig/ep01im02.png)
 
 Styles usually have options available to them.  The options can be declared by typing them between
 square braces (`[` and `]`) before the curly braces.  Each option is separated by a comma.  The
@@ -280,7 +280,7 @@ settings, this will be the default for the entire document.
 ~~~
 {: .language-tex}
 
-<!-- TODO add picture of this -->
+![Class Options](../fig/ep01im03.png)
 
 There are a large number of styles available for LaTeX documents that are not included with the
 default build.  Advanced users might even write their own styles for special documents.  Perhaps
