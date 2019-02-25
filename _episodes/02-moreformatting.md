@@ -61,7 +61,7 @@ twice).
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Class Options](../fig/ep02im01.png)
 
 We can also manually break lines with the `\\` command.  This special character allows us to
 include a line break within a line of our LaTeX code.
@@ -74,7 +74,7 @@ include a line break within a line of our LaTeX code.
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Class Options](../fig/ep02im02.png)
 
 ## Typeface Controls
 
@@ -95,23 +95,22 @@ For our work, we will limit our choices to the following:
 | \sfdefault | "Sans Serif" font                |
 | \ttdefault | "Monospace" font                 |
 
-We can switch between these font families in the body of the `document` by telling LaTeX to renew
+We can switch between these font families in the preamble of the document by telling LaTeX to renew
 which font it will be using.
 
 ~~~
 \documentclass{article}
+\renewcommand{\familydefault}{\sfdefault}
 \begin{document}
-  This text will be serif.
-  \renewcommand{\familydefault}{\sfdefault}
   This text will be sans serif.
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Class Options](../fig/ep02im03.png)
 
-When we call this `renewcommand` line, it will begin using that font family for the rest of the
-document, or until another `renewcommand` is called.
+A `renewcommand` line, can only be used in the preamble.  It's function is to modify what the
+default settings for the class are before text parsing begins.
 
 > If you want to use a different typeface than the default LaTeX one called `Computer Modern`, you
 > must call a package which interprets font file types such as `.ttf` correctly.  This package is
@@ -138,13 +137,13 @@ document, or until another `renewcommand` is called.
 > {: .language-tex}
 {: .callout}
 
+#### Relative Typeface Sizes
+
 To change the size of the text when it is compiled, we need to change the font size.  In our
 [WYSIWYG]({{ page.root }}/reference/#WYSIWYG) editors, we are used to selecting the specific
 size of a font in point(pt) units.  However, in LaTeX, sizes are relative.  The smallest text
 in one kind of document class may be the largest in another.  Therefore, we use relative size
 names.  When we call a new font size from `tiny` to `Huge`
-
-#### Relative Typeface Sizes
 
 | Commands (Smallest to Largest)  |
 |:-------------------------------:|
@@ -174,7 +173,7 @@ confined to a certain portion of text.
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Class Options](../fig/ep02im04.png)
 
 > If you simply must use specific font sizes, you need to use a different compiler.  Like before,
 > `pdflatex` does not support font sizes beyond certain bounds.  If you want this kind of control,
@@ -217,7 +216,7 @@ temporarily change the typeface family being used.
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Class Options](../fig/ep02im05.png)
 
 ## Sections
 
@@ -283,7 +282,7 @@ increasing the counter and printing the section number, an asterisk (`*`) is add
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture??? The current output might be fine. -->
+![Class Options](../fig/ep02im06.png)
 
 ~~~
 1. Some Section
@@ -325,7 +324,7 @@ variant of the original `color` package.  To make some text have color, we use t
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Class Options](../fig/ep02im07.png)
 
 LaTeX knows only a few colors by default:
 
@@ -355,7 +354,7 @@ use the color, we can call it in the normal way.
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture -->
+![Class Options](../fig/ep02im08.png)
 
 
 ## Custom Dictionaries
@@ -375,13 +374,13 @@ are relatively "new".
 \documentclass{article}
 \hyphenation{Ok-la-ho-ma che-mo-ther-apy}
 \begin{document}
-  Now if we want to write a really long sentance, the words chemotherapy and Oklahoma will be split
-  properly as we go from line to line.
+  Now if we want to write a really, really long sentance, the words chemotherapy and Oklahoma
+  will be split properly as we go from line to line.
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO add output picture, possibly modify text so that it shows line breaking -->
+![Class Options](../fig/ep02im09.png)
 
 ## Quotation Marks
 
