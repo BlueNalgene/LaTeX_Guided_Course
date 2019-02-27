@@ -14,7 +14,6 @@ objectives:
 - "Declare float locations"
 - "Learn how LaTeX handles text wrapping around a float"
 - "Resize an image"
-<!-- - "Resize a float" -->
 - "Include multiple images in a single float"
 
 keypoints:
@@ -24,12 +23,13 @@ keypoints:
 - "Change the position of a float on the page with `h`, `t`, `b`, `p`, and `!`"
 - "Change how the text is wrapped around the float with `wrapfigure`"
 - "Alter the size of an image within a float using `height` and `width` options"
-<!-- - "Using `scalebox` and `resizebox`, scale portions of a float." -->
 - "Add multiple graphics to a single float using `subfigure`"
 - "Caption each subfigure with the `subcaption` library"
 
-
 ---
+
+<!-- - "Resize a float" -->
+<!-- - "Using `scalebox` and `resizebox`, scale portions of a float." -->
 
 ## The Float Environment
 
