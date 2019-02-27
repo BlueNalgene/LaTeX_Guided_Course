@@ -14,7 +14,7 @@ objectives:
 - "Declare float locations"
 - "Learn how LaTeX handles text wrapping around a float"
 - "Resize an image"
-- "Resize a float"
+<!-- - "Resize a float" -->
 - "Include multiple images in a single float"
 
 keypoints:
@@ -24,7 +24,7 @@ keypoints:
 - "Change the position of a float on the page with `h`, `t`, `b`, `p`, and `!`"
 - "Change how the text is wrapped around the float with `wrapfigure`"
 - "Alter the size of an image within a float using `height` and `width` options"
-- "Using `scalebox` and `resizebox`, scale portions of a float."
+<!-- - "Using `scalebox` and `resizebox`, scale portions of a float." -->
 - "Add multiple graphics to a single float using `subfigure`"
 - "Caption each subfigure with the `subcaption` library"
 
@@ -205,6 +205,25 @@ The following are valid positions within the figure environment.
 |  p  | alone on a page    |
 |  !  | modifier: DO IT    |
 
+Floats will always appear on the leftmost side of the page.  However, this is rarely an
+attractive way to present figures.  Placing a float in the center of the page is often best.  To
+center a float, the float must told to use `centering`.  Note that this is a command, not an
+environment.  When it is called, all content within the environment will be centered.
+
+~~~
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{lion.png}
+  \end{figure}
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO this code as image -->
+
 ## Captioning Floats
 
 Captions can be applied to the contents of a float environment by including a `caption` command.
@@ -218,6 +237,7 @@ will be above the image.  If called after the `includeimage` command, it will be
 \usepackage{graphicx}
 \begin{document}
   \begin{figure}
+    \centering
     \includegraphics[width=0.5\linewidth]{lion.png}
     \caption{This lion is the TeX mascot}
   \end{figure}
@@ -256,6 +276,7 @@ we would use:
   me, and the compiler.  I hope this is enough dummy text for this example.  If not, I will have to
   type up some more.
   \begin{wrapfigure}{l}{0.80\textwidth}
+    \centering
     \includegraphics[width=0.78\textwidth]{lion.png}
   \end{wrapfigure}
   Oops, I just tried compiling it.  Apparently I need to include a bit more.  I could go on a bit
@@ -273,8 +294,74 @@ It is important to note that the included image is slightly smaller than the siz
 exactly what it is told.  If you tell it to put a bigger image in the container than will fit,
 you can expect it to spill out in strange ways.
 
-
-## Resizing and Scaling a Float
+<!-- NOTE omitting this for now, might bring in later.
+## Resizing and Scaling a Float-->
 
 
 ## Two Images, One Float
+
+Multiple figures can be added to a single float environment using the `subfigure` environment
+**within** the `figure` environment.  The `subfigure` command is contained within the `subcaption`
+package.  Each subfigure must be given a size value which is reasonable for the size of the page.
+After each of these `subfigure` environments, add a non-breaking space (`~`) so there is an
+appropriate room between each part.
+
+> When using `subfigure` environments within a `figure` environment, it is important to consider
+> how the environments are nested.  The positioning and size options given with `subfigure` are
+> subordinate on the options given to `figure`.  Even if you tell each `subfigure` to position with
+> `b`, if you tell `figure` to position with `t`, the float will appear at the top of the page.
+{: .callout}
+
+The size of each `subfigure` is declared when the environment is called.  However, the
+`includegraphics` commands still needs size information.  When the `subfigure` is given a size,
+the subfloat is treated like a tiny page.  Watch what happens when we tell the loaded image to
+use the full width available compared to a fraction of it like we usually would:
+
+~~~
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\begin{document}
+  \begin{figure}[t]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+      \includegraphics[width=\textwidth]{lion.png}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+      \includegraphics[width=0.45\textwidth]{lion.png}
+    \end{subfigure}
+  \end{figure}
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO this code as image -->
+
+If we want to use captions with subfigures, we need to consider whether we want captions for the
+entire float, or if we want individual captions for each subfloat.  The position we issue the
+command `caption` will determine where the caption goes.
+
+~~~
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\begin{document}
+  \begin{figure}[t]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+      \includegraphics[width=\textwidth]{lion.png}
+      \caption{This is a full width image}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+      \includegraphics[width=0.45\textwidth]{lion.png}
+      \caption{This image is scaled incorrectly}
+    \end{subfigure}
+    \caption{Scaling of the lion image using \texttt{subfigure}.}
+  \end{figure}
+\end{document}
+~~~
+{: .language-tex}
+
+<!-- TODO this code as image -->

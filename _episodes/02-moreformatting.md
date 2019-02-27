@@ -284,18 +284,6 @@ increasing the counter and printing the section number, an asterisk (`*`) is add
 
 ![Class Options](../fig/ep02im06.png)
 
-~~~
-1. Some Section
-  Some text.
-1.a. Count this section
-  Some text.
-But not this section
-  Some text.
-1.b. And count this one
-  Some text.
-~~~
-{: .output}
-
 ## Alignment
 
 
@@ -449,7 +437,7 @@ which modify existing letters.
 #### Table of Accented Characters
 
 | Command |Sample| Description                              |
-|---------|:----:|------------------------------------------|
+|:-------:|:----:|:-----------------------------------------|
 | \\`{o}  |   ò  | grave accent                             |
 | \\'{o}  |   ó  | acute accent                             |
 | \^{o}   |   ô  | circumflex                               |
@@ -477,7 +465,7 @@ The correct way to use this table is to view the HTML output.-->
 
 In English, different hyphens are used for different meanings.  These can be printed in the text
 by including different numbers of short hyphens in the code.  The obvious outlier here is the minus
-sign.  Using math requires entering [math mode](), something which will be covered in more detail
+sign.  Using math requires entering [math mode]({{ page.root }}/reference/#escape sequence), something which will be covered in more detail
 later.  For now, it is worthwhile to note that math symbols can be used within the text by
 surrounding the symbol with the dollar sign (`$`).
 
