@@ -465,9 +465,9 @@ The correct way to use this table is to view the HTML output.-->
 
 In English, different hyphens are used for different meanings.  These can be printed in the text
 by including different numbers of short hyphens in the code.  The obvious outlier here is the minus
-sign.  Using math requires entering [math mode]({{ page.root }}/reference/#escape sequence), something which will be covered in more detail
-later.  For now, it is worthwhile to note that math symbols can be used within the text by
-surrounding the symbol with the dollar sign (`$`).
+sign.  Using math requires entering [math mode]({{ page.root }}/reference/#escape sequence),
+something which will be covered in more detail later.  For now, it is worthwhile to note that math
+symbols can be used within the text by surrounding the symbol with the dollar sign (`$`).
 
 #### Table of Dashes
 

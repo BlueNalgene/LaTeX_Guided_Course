@@ -39,13 +39,15 @@ $ cd /D %userprofile%\Desktop\LaTeX-Intro\buildingblocks
 
 ### Option 1: Start Overleaf Project
 
-[Overleaf](https://www.overleaf.com/) is an online service which allows for collaborative LaTeX document
-creation and editing.  It is free to use for individuals.  On the website, register an account and/or log in.
+[Overleaf](https://www.overleaf.com/) is an online service which allows for collaborative LaTeX
+document creation and editing.  It is free to use for individuals.  On the website, register an
+account and/or log in.
 
 Start a new document by clicking on `New Project` and choose `Blank Project`.  Enter a title like
 `LaTeX-Intro`.
 
-You can edit the document directly on the source page which comes up.  It will compile as you go along.
+You can edit the document directly on the source page which comes up.  It will compile as you go
+along.
 
 &nbsp; <!-- vertical spacer -->
 
@@ -59,8 +61,8 @@ $ nano
 ~~~
 {: .source}
 
-To interpret the code we have written, we will need to execute code in the terminal.  We do this with
-the `pdflatex` command.
+To interpret the code we have written, we will need to execute code in the terminal.  We do this
+with the `pdflatex` command.
 ~~~
 $ pdflatex %ourTeXfile%
 ~~~
