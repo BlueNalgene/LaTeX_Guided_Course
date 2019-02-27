@@ -210,6 +210,7 @@ environment.
 > It is a [best practice]({{ page.root }}/reference/#best practice) to organize your columns in
 > your LaTeX file by the size of their content.  This will make it easier for you to read and make
 > edits.  Most editors should use a monospace font, making this easy to implement.
+{: .callout}
 
 ### Another Row? Another Line Break!
 
