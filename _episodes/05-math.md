@@ -136,6 +136,7 @@ notation placed in curly braces at these commands will be shifted into this scri
 > If no curly braces are used, the first character to follow the script symbol is promoted/demoted.
 > This means that `$x^2$` is a valid function, but `$x^20$` would not equal `$x^{20}$`.  It is wise
 > to get in the habit of using curly braces all the time, to prevent confusion.
+{: .callout}
 
 This scripting works with symbols too.
 
@@ -203,6 +204,7 @@ automatically adapt to the size of the rest of the notation within the environme
 
 > Even more delimiters are provided by the `amsmath` package, such as big ones (`bigl(`) and
 > some even bigger ones (`Bigl(`)
+{: .callout}
 
 ## What If I Need a Weird Symbol?
 
@@ -214,6 +216,7 @@ below list the symbols available to the default installation.
 > If you ever have a problem with a command sequence symbol not behaving next to a text symbol,
 > such as `\neqx` not showing up properly, you can add a single set of curly braces to tell the
 > LaTeX math parser not to confuse the separate entities (`\neq{}x`).
+{: .callout}
 
 <!-- NOTE put symbols on special page that links here -->
 
