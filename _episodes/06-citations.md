@@ -130,17 +130,99 @@ topic.
 ### BibTeX Files
 
 Information for LaTeX works cited in the paper is stored in a special file (`.bib` filetype) in
-the BibTeX format.
+the BibTeX format.  The format stores information about the title, author, year, url, and other
+relevant information for publications you intend to cite.  Each BibTeX entry is given a type,
+such as journal article, web-page, report, etc., and a unique identifier.  When information is
+cited in the LaTeX document by referencing the identifier, LaTeX and BibTeX parse the file for
+the type of each entry.  Then, based on the settings in the LaTeX document, BibTeX prints the
+relevant information.  This means that BibTeX entries can store information that may not be used
+within the document.
+
+The BibTeX format is very common in academic circles.  When an academic paper is accessed from a
+database online, there is often an option to "export" the citation.  If you are using a citation
+manager (which is highly recommended), you might already be familar with exporting meta files.
+
+Citation managers including Zotero, Mendeley, and EndNote, support exporting libraries as BibTeX
+files.  This makes it particularly easy to collect references you intend to use in a file, and
+have it ready to go when preparing a document.
 
 ### Inline Citation
 
+To cite works within the text of your document, use the `cite` command with the unique identifier
+of the BibTeX entry you want.  This operates similarly to the `ref` command by putting the
+inline citation exactly where you declare it.  The proper way to format this in your text such that
+the page rendering does not automatically wrap the citation around to a new line is to use a
+non-breaking space (`~`) before each citation command.
+
+~~~
+This is some text blah blah.~\cite{2008Einstein}
+~~~
+{: .language-tex}
+
+Multiple citations can be placed in a single `cite` command.  Each identifier you want to cite
+should be separated by a comma (`,`).
+
+~~~
+This is some text blah blah.~\cite{2008Einstein, 2009Lamport, 2001Gonzales}
+~~~
+{: .language-tex}
+
+Adding an options to the `cite` command enclosed in square braces will add text to the inline
+citation.  This is useful for including page or chapter information.  Simply place the page
+number or range of numbers in the brackets to automatically produce the necessary modification.
+
+~~~
+This is some text blah blah.~\cite[84]{2008Einstein}
+~~~
+{: .language-tex}
 
 ### Footnote Citation
 
+Certain publication formats will require citations to be placed in the footnotes of the page the
+inline citation occurs on.  LaTeX does not support this natively, so we need to pull in a package
+which can handle it called `footbib`.  The `cite` command is replaced by `footcite`, and has many
+of the same rules as `cite`.
+
+~~~
+This is some text blah blah.~\footcite{2008Einstein}
+~~~
+{: .language-tex}
 
 ### Creating a Bibliography
 
+Of course, if inline citations are used, there must be a bibliography or works cited section to
+contain the references.  We first declare how the bibliography should look using
+`bibliographystyle`.  There are several default options available:
 
+|  Style  | Description                                                           |
+|:-------:|:----------------------------------------------------------------------|
+|  abbrv  | Abbreviated first name, full last name.  Ordered based on appearance  |
+|   acm   | Association of Computing Machinery style                              |
+|  alpha  | Alphanumeric inline reference values, not numbered                    |
+| apalike | APA Like citation style                                               |
+|  ieeetr | IEEE Transactions Style                                               |
+|  plain  | The default style.  Lists everything                                  |
+|  siam   | Society for Industrial and Applied Mathematics style                  |
+|  unsrt  | Sorts references based on order in `.bib` file, not in paper          |
+
+On the next line, the command `bibliography` is issued with curly braces holding the filenames
+of your BibTeX file.  The filetype (`.bib`) is **NOT** added.  If the BibTeX file is not in same
+the root directory as your LaTeX file, then you must declare the full path.  However, it is
+recommended to include a unique BibTeX file in the root project directory for each document you
+create to aid portability.
+
+~~~
+\bibliographystyle{plain}
+\bibliography{bibfile}
+~~~
+{: .language-tex}
+
+There are many more styles of inline and reference citations available outside of the default
+LaTeX configuration.  Some document classes provided by publishers will require certain custom
+bibliography styles to be used.  For these, it is important to read the documentation for to match
+the requirements of the class.  The `natbib` package is commonly used to provide more options for
+formatting citations.  It operates very similarly to the default BibTeX use we have learned here.
+Consult the documentation for more information.
 
 
 
