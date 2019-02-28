@@ -136,6 +136,7 @@ notation placed in curly braces at these commands will be shifted into this scri
 > If no curly braces are used, the first character to follow the script symbol is promoted/demoted.
 > This means that `$x^2$` is a valid function, but `$x^20$` would not equal `$x^{20}$`.  It is wise
 > to get in the habit of using curly braces all the time, to prevent confusion.
+{: .callout}
 
 This scripting works with symbols too.
 
@@ -203,6 +204,7 @@ automatically adapt to the size of the rest of the notation within the environme
 
 > Even more delimiters are provided by the `amsmath` package, such as big ones (`bigl(`) and
 > some even bigger ones (`Bigl(`)
+{: .callout}
 
 ## What If I Need a Weird Symbol?
 
@@ -214,176 +216,9 @@ below list the symbols available to the default installation.
 > If you ever have a problem with a command sequence symbol not behaving next to a text symbol,
 > such as `\neqx` not showing up properly, you can add a single set of curly braces to tell the
 > LaTeX math parser not to confuse the separate entities (`\neq{}x`).
+{: .callout}
 
 <!-- NOTE put symbols on special page that links here -->
-
-#### Equalities
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   \=   | =                        |   ≠    | \neq                     |
-|   ≐    | \doteq                   |   ≡    | \\equiv                  |
-|   ≈    | \approx                  |   ≅    | \cong                    |
-|   ≃    | \simeq                   |   ∼    | \sim                     |
-
-<!--NOTE Several of these sequences use Markdown escape characters, and must be double escaped.
-The correct way to use this table is to view the HTML output.-->
-
-#### Inequalities
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   <    | <                        |   \>    | >                       |
-|   ≤    | \leq                     |   ≥    | \geq                     |
-|   ≪    | \ll                      |   ≫    | \gg                     |
-
-<!--NOTE Several of these sequences use Markdown escape characters, and must be double escaped.
-The correct way to use this table is to view the HTML output.-->
-
-#### Sets
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   ∈    | \in                      |   ∋    | \ni                      |
-|   ∉    | \notin                   |   ¬    | \neg                     |
-|   ∩    | \cap                     |   ∪    | \cup                     |
-|   ⊓    | \sqcap                   |   ⊔    | \sqcup                   |
-|   ∧    | \wedge \land             |   ∨    | \vee \lor                |
-|   ∃    | \exists                  |   ∄    | \nexists                 |
-|   ≀    | \wr                      |   ⊎    | \uplus                   |
-|   ·    | \cdot                    |   ⋄    | \diamond                 |
-|   △    | \bigtriangleup           |   ▽    | \bigtriangledown         |
-|   ⊲    | \triangleleft            |   ⊳    | \triangleright           |
-|       | \bigcirc                 |   •    | \bullet                  |
-|   ∀    | \forall                  |
-
-<!-- TODO Is there a unicode equivalent for bigcirc? -->
-
-#### Set Equalities/Inequalities
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   ⊂    | \subset                  |   ⊃    | \supset                  |
-|   ⊆    | \subseteq                |   ⊇    | \supseteq                |
-|   ⊈    | \nsubseteq               |   ⊉    | \nsupseteq               |
-|   ⊏    | \sqsubset                |   ⊐    | \sqsupset                |
-|   ⊑    | \sqsubseteq              |   ⊒    | \sqsupseteq              |
-|   ≼    | \preceq                  |   ≽    | \succeq                  |
-|   ≺    | \prec                    |   ≻    | \succ                    |
-|   ∝    | \propto                  |   ⊨    | \models                  |
-|   ⊢    | \vdash                   |   ⊣    | \dashv                   |
-
-#### Set Logic
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   →    | \rightarrow \to          |   ←    | \leftarrow \gets         |
-|   ⇒    | \Rightarrow  \implies    |   ⇐    | \LeftRightarrow          |
-|   ↔    | \leftrightarrow          |   ⇔    | \iff                     |
-|   ⊤    | \top                     |   ⊥    | \bot                     |
-|   ∅    | \emptyset                |   ⌀    | \varnothing              |
-|   ↦    | \mapsto                  |        |                          |
-
-
-#### Geometric Relationships
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   ∥    | \parallel                |   ∦    | \nparallel               |
-|   ≍    | \asymp                   |   ⋈    | \bowtie                  |
-|   ⏝    | \smile                   |   ⏜    | \frown                   |
-|   ∡    | \sphericalangle          |   ∠    | \measuredangle           |
-|   ⊥    | \perp                    |
-
-#### Binary Operators
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   ±    | \pm                      |   ∓    | \mp                      |
-|   ×    | \times                   |   ÷    | \div                     |
-|   ∗    | \ast                     |   ⋆    | \star                    |
-|   †    | \dagger                  |   ‡    | \ddagger                 |
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   ⊕    | \oplus                   |   ⊙    | \odot                    |
-|   ⊖    | \ominus                  |   ∘    | \circ                    |
-|   ⊗    | \otimes                  |   ∖    | \setminus                |
-|   ⊘    | \oslash                  |       | \amalg                   |
-
-<!-- TODO Is there a unicode equivalent for amalg? -->
-
-
-#### Delimiters
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   ∣    | \mid                     |   ∣    | \mid                     |
-|   ‖    | \|                       |   ‖    | \|                       |
-|   {    | \{ \left{                |   }    | \} \right}               |
-|   (    | \left(                   |   )    | \right)                  |
-|   [    | \left[                   |   ]    | \right]                  |
-|   ↑    | \uparrow                 |   ↓    | \downarrow               |
-|   ⇑    | \Uparrow                 |   ⇓    | \Downarrow               |
-|   ⟨    | \langle                  |   ⟩    | \rangle                  |
-|   /    | /                        |   \    | \backslash               |
-|   ⌈    | \lceil                   |   ⌉    | \rceil                   |
-|   ⌊    | \lfloor                  |   ⌋    | \rfloor                  |
-
-
-#### Greek Characters
-
-|  Symbol  |              Script            |  Symbol  |             Script             |
-|:--------:|:-------------------------------|:--------:|:-------------------------------|
-|   𝛢 𝛼    | \Alpha \alpha                  |   𝛮 𝜈    | \Nu \nu                        |
-|   𝛣 𝛽    | \Beta \beta                    |   𝛯 𝜉    | \Xi \xi                        |
-|   𝛤 𝛾    | \Gamma \gamma                  |   𝛰 𝜊    | \Omicron \omicron              |
-|   𝛥 𝛿    | \Delta \delta                  |   𝛱 𝜋 𝜛  | \Pi \pi \varpi                |
-|   𝛦 𝜀 ϵ  | \Epsilon \epsilon \varepsilon  |   𝛲 𝜌 𝜚  | \Rho \rho \varrho              |
-|   𝛧 𝜁    | \Zeta \zeta                    |   𝛴 𝜎    | \Sigma \sigma \varsigma        |
-|   𝛨 𝜂    | \Eta \eta                      |   𝛵 𝜏    | \Tau \tau                      |
-|   𝛩 𝜃 𝜗  | \Theta \theta \vartheta        |   𝛶 𝜐    | \Upsilon \upsilon              |
-|   𝛪 𝜄     | \Iota \iota                    |   𝛷 𝜑 𝜙  | \Phi \phi \varphi              |
-|   𝛫 𝜅 𝜘  | \Kappa \kappa \varkappa        |   𝛸 𝜒    | \Chi \chi                      |
-|   𝛬 𝜆    | \Lambda \lambda                |   𝛹 𝜓    | \Psi \psi                      |
-|   𝛭 𝜇    | \Mu \mu                        |   𝛺 𝜔    | \Omega \omega                  |
-
-
-
-#### n-ArrayOperators, Functions, Integrals, and Other Characters
-
-| Symbol |           Script         | Symbol |           Script         |
-|:------:|:-------------------------|:------:|:-------------------------|
-|   ∂    | \partial                 |   ∑    | \sum                     |
-|   ð    | \eth                     |   ∏    | \prod                    |
-|   ℏ    | \hbar                    |   ∐    | \coprod                  |
-|       | \imath                    |   ⨁    | \bigoplus                |
-|       | \jmath                    |   ⨂    | \bigotimes               |
-|   ℓ    | \ell                      |   ⨀    | \bigodot                 |
-|   ℜ    | \Re                      |   ⋃    | \bigcup                  |
-|   ℑ    | \Im                      |   ⋂    | \bigcap                  |
-|   ℘    | \wp                      |   ⨄    | \biguplus                |
-|   ∇    | \nabla                   |   ⨆    | \bigsqcup                |
-|   ☐    | \Box                     |   ⋁    | \bigvee                  |
-|   ∞    | \infty                   |   ⋀    | \bigwedge                |
-|   ∫    | \int                     |   ℵ    | \aleph                  |
-|   ∮    | \oint                   |   ℶ    | \beth                    |
-|   ∬    | \iint                    |   ℷ    | \gimel                   |
-|   ∭    | \iiint                   |   ⨌    | \iiiint                 |
-|   ∫⋯∫    | \idotsint              |
-
-<!-- TODO Is there a unicode equivalent for imath and jmath? -->
-
-
-
-#### Trigonometric Functions (author's note, no Unicode equivalents)
-
-| Symbol |   Script   | Symbol |   Script   | Symbol |   Script   | Symbol |   Script   |
-|:------:|:-----------|:------:|:-----------|:------:|:-----------|:------:|:-----------|
-|   sin  | \sin       |  sin⁻¹ | \arcsin    |  sinh  | \sinh      |   sec  | \sec       |
-|   cos  | \cos       |  cos⁻¹ | \arccos    |  cosh  | \cosh      |   csc  | \csc       |
-|   tan  | \tan       |  tan⁻¹ | \arctan    |  tanh  | \tanh      |
-|   cot  | \cot       |  cot⁻¹ | \arccot    |  coth  | \coth      |
 
 
 ## Breaking a Long Equation Across Multiple Lines
@@ -499,5 +334,4 @@ environment.  This requires the `amsmath`package.
 
 
 
-
-
+{% include links.md %}

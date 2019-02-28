@@ -91,8 +91,9 @@ including `documentclass` are placed in the preamble.  Everything else must be b
 
 The entirety of "our document's contents" is bound by commands.  We can tell that these are
 commands in LaTeX, commands are declared with the backslash (`\`).  An environment will `begin` and
-`end` at the boundaries declared.  So if we want to use a [math mode]({{ page.root }}/reference/#math mode)
-environment (something which will be discussed later in this lesson) with an equation we would use:
+`end` at the boundaries declared.  So if we want to use a
+[math mode]({{ page.root }}/reference/#math mode) environment (something which will be discussed
+later in this lesson) with an equation we would use:
 
 ~~~
 \begin{document}

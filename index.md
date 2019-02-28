@@ -7,26 +7,18 @@ The best way to learn how to program is to do something useful,
 so this introduction to LaTeX is built around a common scientific task:
 **publication preparation**.
 
-### Arthritis Inflammation
-We are studying **inflammation in patients** who have been given a new treatment for arthritis, and
-need to analyze the first dozen data sets of their daily inflammation. The data sets are stored in
-[comma-separated values]({{ page.root }}/reference/#comma-separated-values) (CSV) format:
+### Unformatted Text
 
-- each row holds information for a single patient,
-- columns represent successive days.
-
-The first three rows of our first file look like this:
-~~~
-0,0,1,3,1,2,4,7,8,3,3,3,10,5,7,4,7,7,12,18,6,13,11,11,7,7,4,6,8,8,4,4,5,7,3,4,2,3,0,0
-0,1,2,1,2,1,3,2,2,6,10,11,5,9,4,4,7,16,8,6,18,4,12,5,12,7,11,5,11,3,3,5,4,4,5,5,1,1,0,1
-0,1,1,3,3,2,6,2,5,9,5,7,4,5,4,15,5,11,9,10,19,14,12,17,7,12,11,7,4,2,10,5,4,2,2,3,2,2,1,1
-~~~
-{: .source}
+We are preparing an unformatted text file for publication.  The document includes a description
+of a trip to the Near East, Notes to Interested Researchers, Preparations of Compounds, and
+Elliptical Formula Derivation.
 
 So, we want to:
 
-1. Calculate the average inflammation per day across all patients.
-2. Plot the result to discuss and share with colleagues.
+1. Format symbols in the text to be rendered properly in a final document
+2. Organize the content in a logical manner
+3. Add important details to the content
+4. Present a final document, suitable for publication
 
 To do all that, we'll have to learn a little bit about document creation.
 
