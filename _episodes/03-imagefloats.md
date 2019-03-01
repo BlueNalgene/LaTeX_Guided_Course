@@ -81,8 +81,8 @@ the beginning, it is best to keep things simple.
 
 ## Resizing and Scaling an Image
 
-Obviously our image has loaded, but it is much too large.  The float container spills over into
-the margin and part of the figure is lost.  Clearly we need to control the size of the image
+Our image has loaded, but it is much too large.  The float container spills over into
+the margin and part of the figure is lost.  We need to control the size of the image
 somehow.
 
 Image sizing options are possible with the `includegraphics` command.  You simply put the size info
