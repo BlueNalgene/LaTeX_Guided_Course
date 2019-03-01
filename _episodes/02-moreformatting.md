@@ -79,8 +79,7 @@ include a line break within a line of our LaTeX code.
 ## Typeface Controls
 
 In modern [WYSIWYG]({{ page.root }}/reference/#WYSIWYG) editors, we are used to having many choices
-for typefaces and font size.  LaTeX keeps things clean and simple, by limiting our options.  When
-the original TeX was invented, there was no format for fonts like exist today.  Indeed, the
+for typefaces and font size, many of which don't have much practical use.  LaTeX keeps things clean and simple, by limiting our options.  When the original TeX was invented, there was no format for fonts like exist today.  Indeed, the
 `pdflatex` command we are using to compile our documents does not support custom fonts without a
 bit of work.  But that is ok!  For academic work, using complicated typefaces can actually distract
 from the content.
