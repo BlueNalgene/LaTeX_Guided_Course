@@ -9,7 +9,7 @@ root: ..
 
 1. Download [zipfile1][test].
 2. Create a folder called `LaTeX-Intro` on your Desktop.
-3. Move downloaded files into this newly created folder.
+3. Move the downloaded .zip file into the newly created `LaTeX-Intro` folder.
 4. Unzip the files.
 
 You should now see the new folder called `buildingblocks` in your `LaTeX-Intro` directory on your
@@ -23,7 +23,7 @@ If you're using a Unix shell application, such as Terminal app in macOS, Console
 Linux, or [Git Bash](https://gitforwindows.org/) on Windows, execute the following command:
 
 ~~~
-$ cd ~/Desktop/LaTeX-Intro/buildingblocks
+cd ~/Desktop/LaTeX-Intro/buildingblocks
 ~~~
 {: .source}
 
@@ -31,7 +31,7 @@ On Windows, you can use its native Command Prompt program.  The easiest way to s
 pressing <kbd>Windows Logo Key</kbd>+<kbd>R</kbd>, entering `cmd`, and hitting <kbd>Enter</kbd>. In
 the Command Prompt, use the following command to navigate to the `buildingblocks` folder:
 ~~~
-$ cd /D %userprofile%\Desktop\LaTeX-Intro\buildingblocks
+cd /D %userprofile%\Desktop\LaTeX-Intro\buildingblocks
 ~~~
 {: .source}
 
