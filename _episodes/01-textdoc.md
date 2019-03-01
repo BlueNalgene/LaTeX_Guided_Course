@@ -91,9 +91,12 @@ including `documentclass` are placed in the preamble.  Everything else must be b
 
 The entirety of "our document's contents" is bound by commands.  We can tell that these are
 commands in LaTeX, commands are declared with the backslash (`\`).  An environment will `begin` and
-`end` at the boundaries declared.  So if we want to use a
-[math mode]({{ page.root }}/reference/#math mode) environment (something which will be discussed
-later in this lesson) with an equation we would use:
+`end` at the boundaries declared.  The `document`, therefore is an environment.  There are many
+other environments that can be used in LaTeX.  All of them must `begin` and `end`.  Environments
+may be [nested]({{ page.root}}/reference/#nested).  This means that one can be put into another.
+However, a nested environment must `begin` and `end` in order as the nest gets deeper.  So if we
+want to use a [math mode]({{ page.root }}/reference/#math mode) environment (something which will
+be discussed later in this lesson) with an equation we would use:
 
 ~~~
 \begin{document}
@@ -390,8 +393,10 @@ pdflatex document.tex
 {: .callout}
 
 When a LaTeX document compiles, it will generate a lot of "junk" files.  They will have filetypes
-such as `.aux`, `.log`, and `.toc`.  These files contain information that the current document
-used during compilation.  They can safely be deleted without causing problems.
+such as `.aux`, `.log`, and `.toc`, but there are other possible ones.  These files contain
+information that the current document used during compilation.  They can safely be deleted or
+ignored without causing problems.  Your document will always compile as long as the `.tex` is
+present, along with any `.bib`, `.cls`, or image file you have added.
 
 
 
