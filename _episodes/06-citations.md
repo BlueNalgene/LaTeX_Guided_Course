@@ -3,7 +3,7 @@ title: Cross-referencing, Citations, and BibTeX
 teaching: 00
 exercises: 00
 
-questions:
+question:
 - "How do I cite my sources in LaTeX?"
 
 objectives:
@@ -40,8 +40,8 @@ keypoints:
 ---
 
 When constructing a large document such as a book or a thesis, we must often reference the
-contents, tables, and figures we are using elsewhere in the document.  We can easily perform
-both indexing and cross-referencing in LaTeX.
+contents, tables, and figures we are using elsewhere in the document.  LaTeX allows us easily perform
+both indexing and cross-referencing.
 
 ## Indexing
 
