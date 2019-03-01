@@ -43,17 +43,17 @@ When creating a document in a [WYSIWYG]({{ page.root }}/reference/#WYSIWYG) edit
 think of the document as a whole.  We think as writers.  Each portion of the document is a jumble
 that must be perfected as it is written.
 
-When a document is created in [LaTeX]({{ page.root }}/reference/#LaTeX), we must command like
+When a document is created in [LaTeX]({{ page.root }}/reference/#LaTeX), we must write commands like
 programmers.  Each portion of the document may be constructed independent of content or context.
-Commands are given which will perform the same function upon each compile.  Just as we command
-like programmers, we must learn to think as *programs*.  Each portion of the LaTeX
-[markdown language]({{ page.root }}/reference/#markdown language) must follow order that can be
+Commands are given which will perform the same function upon each compile.  Just as we run commands
+like programmers, we must learn to think like *programs*.  Each portion of the LaTeX
+[markdown language]({{ page.root }}/reference/#markdown language) must follow orders (or commands) that can be
 interpreted by the compiler and have logical flow.
 
-For this reason, we organize our document into parts which compromise making sense to the compiler
-and the operator.  In the most general sense, we divide a [.tex]({{ page.root }}/reference/#.tex)
+For this reason, we organize our document into parts which compromise between making sense to the compiler
+and making sense to the operator.  In the most general sense, we divide a [.tex]({{ page.root }}/reference/#.tex)
 document into [preamble]({{ page.root }}/reference/#preamble), and content sections.  The preamble
-is where we tell the compiler everything it needs to know to be able to process the content within.
+is where we tell the compiler everything it needs to know to be able to process the content within while the content section contains the actual text, information, figures, etc. that the final document will contain.
 
 We distinguish these sections by restricting them to an
 [environment]({{ page.root }}/reference/#environment).  For example, the content of a document will
@@ -133,14 +133,14 @@ If a command is called without using these characters, LaTeX will assume you inc
 empty curly braces.  Thus,
 
 ~~~
-\command
+\someCommand
 ~~~
 {: .language-tex}
 
 defaults to
 
 ~~~
-\command{}
+\someCommand{}
 ~~~
 {: .language-tex}
 
@@ -153,9 +153,9 @@ would fail and give an error.  It is important to know what each command require
 LaTeX reads each character written in the code and interprets it based on the context.  Certain
 characters such as the back slash `\`, as we have seen, have special properties.  But what if we
 wish to use a character in our document that has been assigned as a special character?  In this
-case, we must tell LaTeX to treat the character like text.  For this purpose, LaTeX provides
+case, we must tell LaTeX to treat the character like text instead of as a command.  For this purpose, LaTeX provides
 [escape sequences]({{ page.root }}/reference/#escape sequence) which print the character.  These
-escape sequences operate similar to commands.  So if we wish to include a back slash in our text,
+escape sequences operate similar to commands by telling the program do a specific action and not being present in the final document.  So if we wish to include a back slash in our text,
 we use the command `\textbackslash`:
 
 ~~~
@@ -170,7 +170,7 @@ we use the command `\textbackslash`:
 Most special characters are escaped with a backslash and the symbol, but others require a command
 phrase.  The correct command phrase may be esoteric to a novice LaTeX user, and difficult to
 remember.  There are many sources available on the internet which can assist with finding the
-'magic word'.  The following characters have special meaning within LaTeX, and require escape
+'magic word'.  The following characters are common examples that have special meaning within LaTeX, and require escape
 sequences:
 
 ~~~
@@ -242,7 +242,7 @@ There are many styles available for LaTeX documents.  The minimum LaTeX build pr
 provided by users that are present in a default build such as `memoir` and `beamer`, as they are
 used so often by all types of users, the maintainers felt they were worth including.
 
-Think of a style as a document template (although they are much more complex than that).  All of
+You can think of a style as a document template (although they are much more complex than that).  All of
 the information about where and how your text should go in the document is stored there.  The
 advantage of this type of program is how easy it makes to switch from one style to another.  We
 can switch the simple title example from the section above from the `article` format to the
@@ -286,7 +286,7 @@ settings, this will be the default for the entire document.
 There are a large number of styles available for LaTeX documents that are not included with the
 default build.  Advanced users might even write their own styles for special documents.  Perhaps
 most important to researchers are the publication style sheets.  When submitting a document for
-publication, the journal, school, or group will often make a LaTeX style sheet available to
+publication, the journal, school, or group will often make a LaTeX style sheet available to, if used properly,
 automatically format your document **exactly** the way they want it.
 
 Each unique style sheet will have a unique set of options.  It is important to not expect each
