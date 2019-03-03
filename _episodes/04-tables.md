@@ -65,7 +65,7 @@ Itemized lists are called with `itemize`:
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![List Itemize](../fig/ep04im01.png)
 
 Note that text that follows `item` does not need to be within curly braces.  All text following
 an `item` is assumed to be part of that point when inside an `itemize` environment.
@@ -92,7 +92,7 @@ ranked in order that it appears and respects hierarchy.  Numbered lists are call
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![List Enumerate](../fig/ep04im02.png)
 
 > If we desire, we can also nest different types of lists.  Hierarchy will be respected for all
 > nested lists, even if the labeling scheme is not the same.
@@ -112,7 +112,7 @@ ranked in order that it appears and respects hierarchy.  Numbered lists are call
 > \end{document}
 > ~~~
 > {: .language-tex}
-> <!-- TODO this code as image -->
+> ![List Mixed](../fig/ep04im03.png)
 {: .callout}
 
 ### Descriptive Lists
@@ -138,7 +138,7 @@ can, however, use an option box.  This will, depending on the style of the docum
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![List Description](../fig/ep04im04.png)
 
 ## Advanced Lists
 
@@ -166,7 +166,26 @@ Then, data are listed in the environment with an ampersand `&` between each colu
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table](../fig/ep04im05.png)
+
+### Another Row? Another Line Break!
+
+Rows are manually declared by starting a new line with `\\`.
+
+~~~
+\documentclass{article}
+  \begin{document}
+    \begin{tabular}{ c c c }
+      A1 & B1 & C1 \\
+      A2 & B2 & C2 \\
+      A3 & B3 & C3
+    \end{tabular}
+\end{document}
+~~~
+{: .language-tex}
+
+![Tables Rows](../fig/ep04im06.png)
+
 
 ### Column Alignment
 
@@ -179,13 +198,15 @@ of the cell (`c`)
 \documentclass{article}
   \begin{document}
   \begin{tabular}{ l r c }
-    A1 & B1 & C1
+    A1 & B1 & C1 \\
+    A222 & B22 & C2 \\
+    A3 & B333 & C33
   \end{tabular}
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table Column Align](../fig/ep04im07.png)
 
 Table environments are types of floats.  They can be told where to position (`h`, `t`, `b`, `p`)
 much in the same way as `figure` floats.  However, they should **NOT** use the `centering` command.
@@ -198,40 +219,21 @@ environment.
   \begin{document}
   \begin{center}
     \begin{tabular}{ l r c }
-      A1 & B1 & C1
+      A1 & B1 & C1 \\
+      A222 & B22 & C2 \\
+      A3 & B333 & C33
     \end{tabular}
   \end{center}
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table Centering](../fig/ep04im08.png)
 
 > It is a [best practice]({{ page.root }}/reference/#best practice) to organize your columns in
 > your LaTeX file by the size of their content.  This will make it easier for you to read and make
 > edits.  Most editors should use a monospace font, making this easy to implement.
 {: .callout}
-
-### Another Row? Another Line Break!
-
-Rows are manually declared by starting a new line with `\\`.
-
-~~~
-\documentclass{article}
-  \begin{document}
-  \begin{center}
-    \begin{tabular}{ l r c }
-      A1 & B1 & C1 \\
-      A2 & B2 & C2 \\
-      A3 & B3 & C3
-    \end{tabular}
-  \end{center}
-\end{document}
-~~~
-{: .language-tex}
-
-<!-- TODO this code as image -->
-
 
 ### Horizontal and Vertical Separators
 
@@ -245,15 +247,15 @@ throughout the table.
   \begin{center}
     \begin{tabular}{ l | r | c }
       A1 & B1 & C1 \\
-      A2 & B2 & C2 \\
-      A3 & B3 & C3
+      A222 & B22 & C2 \\
+      A3 & B333 & C33
     \end{tabular}
   \end{center}
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table Vlines](../fig/ep04im09.png)
 
 Horizontal lines are generated using the `hline` command.  These are generally added next to the
 newline commands `\\` for rows in the table.
@@ -264,15 +266,15 @@ newline commands `\\` for rows in the table.
   \begin{center}
     \begin{tabular}{ l | r | c }
       A1 & B1 & C1 \\ \hline
-      A2 & B2 & C2 \\ \hline
-      A3 & B3 & C3
+      A222 & B22 & C2 \\ \hline
+      A3 & B333 & C33
     \end{tabular}
   \end{center}
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table Hlines](../fig/ep04im10.png)
 
 ### Stretching or Merging Cells
 
@@ -296,15 +298,15 @@ other rows.  A `multirow` cell will require a column, so don't forget to leave r
       \multicolumn{4}{|c|}{Columns} \\ \hline \hline
       \multirow{3}{*}{Rows}
       & A1 & B1 & C1 \\ \hline
-      & A2 & B2 & C2 \\ \hline
-      & A3 & B3 & C3
+      & A222 & B22 & C2 \\ \hline
+      & A3 & B333 & C33
     \end{tabular}
   \end{center}
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table Multirow](../fig/ep04im11.png)
 
 Controlling `hline` can become challenging when using a `multirow`.  In the example above, the
 overzealous lines look ugly when they cut across the combined cell.  To cope with this, we change
@@ -321,15 +323,15 @@ table look professional.
       & \multicolumn{3}{c}{Columns} \\ \hline \hline
       \multirow{3}{*}{Rows}
       & A1 & B1 & C1 \\ \cline{2-4}
-      & A2 & B2 & C2 \\ \cline{2-4}
-      & A3 & B3 & C3
+      & A222 & B22 & C2 \\ \cline{2-4}
+      & A3 & B333 & C33
     \end{tabular}
   \end{center}
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table Multicolumn](../fig/ep04im12.png)
 
 ### Text Wrapping and Cell Size
 
@@ -347,8 +349,8 @@ alignment can be used in this case, `p`. Compare these two examples:
       & \multicolumn{3}{c}{Columns} \\ \hline \hline
       \multirow{3}{*}{Rows}
       & A1 & B1 & This is column C with row number one \\ \cline{2-4}
-      & A2 & B2 & This is column C with row number two \\ \cline{2-4}
-      & A3 & B3 & This is column C with row number three
+      & A222 & B22 & This is column C with row number two \\ \cline{2-4}
+      & A3 & B333 & This is column C with row number three
     \end{tabular}
   \end{center}
     ~
@@ -357,15 +359,15 @@ alignment can be used in this case, `p`. Compare these two examples:
       & \multicolumn{3}{c}{Columns} \\ \hline \hline
       \multirow{3}{*}{Rows}
       & A1 & B1 & This is column C with row number one \\ \cline{2-4}
-      & A2 & B2 & This is column C with row number two \\ \cline{2-4}
-      & A3 & B3 & This is column C with row number three
+      & A222 & B22 & This is column C with row number two \\ \cline{2-4}
+      & A3 & B333 & This is column C with row number three
     \end{tabular}
   \end{center}
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Table Big Cells](../fig/ep04im13.png)
 
 
 ## Float the Table
@@ -393,8 +395,8 @@ command requires a ratio and the contents in two separate sets of curly braces.
           & \multicolumn{3}{c}{Columns} \\ \hline \hline
           \multirow{3}{*}{Rows}
           & A1 & B1 & C1 \\ \cline{2-4}
-          & A2 & B2 & C2 \\ \cline{2-4}
-          & A3 & B3 & C3
+          & A222 & B22 & C2 \\ \cline{2-4}
+          & A3 & B333 & C33
         \end{tabular}
       }
     \end{center}
@@ -405,8 +407,8 @@ command requires a ratio and the contents in two separate sets of curly braces.
           & \multicolumn{3}{c}{Columns} \\ \hline \hline
           \multirow{3}{*}{Rows}
           & A1 & B1 & C1 \\ \cline{2-4}
-          & A2 & B2 & C2 \\ \cline{2-4}
-          & A3 & B3 & C3
+          & A222 & B22 & C2 \\ \cline{2-4}
+          & A3 & B333 & C33
         \end{tabular}
       }
     \end{center}
@@ -428,8 +430,8 @@ this requires the `table` environment **in addition** to the `tabular` environme
         & \multicolumn{3}{c}{Columns} \\ \hline \hline
         \multirow{3}{*}{Rows}
         & A1 & B1 & C1 \\ \cline{2-4}
-        & A2 & B2 & C2 \\ \cline{2-4}
-        & A3 & B3 & C3
+        & A222 & B22 & C2 \\ \cline{2-4}
+        & A3 & B333 & C33
       \end{tabular}
     \end{center}
     \caption{A table of values}
@@ -438,7 +440,7 @@ this requires the `table` environment **in addition** to the `tabular` environme
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Floated Table](../fig/ep04im14.png)
 
 
 

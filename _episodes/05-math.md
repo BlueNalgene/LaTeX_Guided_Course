@@ -58,7 +58,7 @@ creating an `equation` environment.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![EQ](../fig/ep05im01.png)
 
 The `equation` environment not only enters math mode, but also prints the equation number in the
 righthand margin, as is required in many mathematical contexts.  If you do not want an equation
@@ -76,7 +76,7 @@ it using `equation*`.  This command is provided by the `amsmath` package.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![EQ Star](../fig/ep05im02.png)
 
 One synonym for the `equation*` environment is the square bracket environment.  This has the exact
 same properties as `equation*`, but is called with a shorter command that does not require the
@@ -93,7 +93,7 @@ same properties as `equation*`, but is called with a shorter command that does n
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![EQ Brace](../fig/ep05im03.png)
 
 ### Inline Math
 
@@ -112,7 +112,7 @@ While this will enter math mode, it will not increase an equation counter.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![EQ Inline](../fig/ep05im04.png)
 
 ## Super- and Sub- scripting
 
@@ -131,7 +131,7 @@ notation placed in curly braces at these commands will be shifted into this scri
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![SuperSub EQ](../fig/ep05im05.png)
 
 > If no curly braces are used, the first character to follow the script symbol is promoted/demoted.
 > This means that `$x^2$` is a valid function, but `$x^20$` would not equal `$x^{20}$`.  It is wise
@@ -151,7 +151,7 @@ This scripting works with symbols too.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![SuperSub EQ Symbols](../fig/ep05im06.png)
 
 ## Stacking Fractions and Division
 
@@ -175,7 +175,7 @@ the command `frac`, where the numerator and denominator go in sequential curly b
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Frac EQ](../fig/ep05im07.png)
 
 ## Dynamic Delimiters
 
@@ -200,7 +200,7 @@ automatically adapt to the size of the rest of the notation within the environme
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Left EQ Right](../fig/ep05im08.png)
 
 > Even more delimiters are provided by the `amsmath` package, such as big ones (`bigl(`) and
 > some even bigger ones (`Bigl(`)
@@ -251,7 +251,7 @@ can be used for each line, and each line must be broken by a newline character (
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![EQ Align](../fig/ep05im09.png)
 
 Note that each step in this equation is given an equation number counter.  If we want everything in
 this equation block to have a single equation counter, we need to `split` a single `align`
@@ -275,7 +275,7 @@ environment.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![EQ Split](../fig/ep05im10.png)
 
 The `split` is only a valid sub-environment for `align`.  It can only be used within another float,
 not on its own.
@@ -301,7 +301,7 @@ counter on the side of the page.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![EQ Split Align Star](../fig/ep05im11.png)
 
 ## Adding Text Comments to Rendered Math
 
@@ -324,7 +324,7 @@ environment.  This requires the `amsmath`package.
 {: .language-tex}
 
 
-<!-- TODO this code as image -->
+![EQ Text](../fig/ep05im12.png)
 
 
 

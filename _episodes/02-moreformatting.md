@@ -61,7 +61,7 @@ twice).
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im01.png)
+![Twolines](../fig/ep02im01.png)
 
 We can also manually break lines with the `\\` command.  This special character allows us to
 include a line break within a line of our LaTeX code.  Note that a line break is not the same as
@@ -75,7 +75,7 @@ starting a new paragraph.  Manual line breaks will not automatically indent.
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im02.png)
+![Forced Newline](../fig/ep02im02.png)
 
 ## Typeface Controls
 
@@ -107,7 +107,7 @@ which font it will be using.
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im03.png)
+![Font Family](../fig/ep02im03.png)
 
 A `renewcommand` line, can only be used in the preamble.  It's function is to modify what the
 default settings for the class are before text parsing begins.
@@ -173,7 +173,7 @@ confined to a certain portion of text.
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im04.png)
+![Font Size](../fig/ep02im04.png)
 
 > If you simply must use specific font sizes, you need to use a different compiler.  Like before,
 > `pdflatex` does not support font sizes beyond certain bounds.  If you want this kind of control,
@@ -216,7 +216,7 @@ temporarily change the typeface family being used.
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im05.png)
+![Font Style](../fig/ep02im05.png)
 
 ## Sections
 
@@ -282,7 +282,7 @@ increasing the counter and printing the section number, an asterisk (`*`) is add
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im06.png)
+![Sections and Subsections Starred](../fig/ep02im06.png)
 
 ## Alignment
 
@@ -307,12 +307,12 @@ variant of the original `color` package.  To make some text have color, we use t
 \documentclass{article}
 \usepackage{xcolor}
 \begin{document}
-  \textcolor{red}{This text will be red}
+  \textcolor{cyan}{This text will be cyan}
 \end{document}
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im07.png)
+![Text Color](../fig/ep02im07.png)
 
 LaTeX knows only a few colors by default:
 
@@ -342,7 +342,7 @@ use the color, we can call it in the normal way.
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im08.png)
+![Custom Color](../fig/ep02im08.png)
 
 
 ## Custom Dictionaries
@@ -368,7 +368,7 @@ are relatively "new".
 ~~~
 {: .language-tex}
 
-![Class Options](../fig/ep02im09.png)
+![Syllabic Dictionary](../fig/ep02im09.png)
 
 ## Quotation Marks
 
