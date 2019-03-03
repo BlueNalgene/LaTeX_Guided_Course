@@ -52,6 +52,10 @@ like:
 ~~~
 {: .language-tex}
 
+LaTeX is funny about content movement.  We can only arrange things by a single environment at a
+time.  Being able to add these floating environments will be useful to arrange things like figures
+and tables.  If we did not contain these things, LaTeX would place them unintelligently.
+
 ## Importing an Image
 
 Using a float to hold text is usually pointless.  What floats excel at is holding images.  We will
