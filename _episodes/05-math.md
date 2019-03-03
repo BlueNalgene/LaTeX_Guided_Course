@@ -3,7 +3,7 @@ title: LaTeX Math
 teaching: 00
 exercises: 00
 
-question:
+questions:
 - "How do I use equations in LaTeX?"
 
 objectives:
