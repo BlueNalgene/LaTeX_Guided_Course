@@ -77,7 +77,7 @@ the command.  Our simple version will look like this:
 ~~~
 {: .language-tex}
 
-<!-- TODO image of this code.  Yes, the picture should be stupid big.  File is stored in ../fig/ -->
+![Big Lion](../fig/ep03im01.png)
 
 The types of images that LaTeX supports depends on what you are using to compile.  Since we will
 be using `pdflatex` to compile, we will only use `.jpg`, `.png`, and `.pdf` files for image.  In
@@ -122,7 +122,7 @@ more suited for folks with advanced typesetting needs.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Squishy Lion](../fig/ep03im02.png)
 
 When you specify both a height and a width, LaTeX will resize the image exactly as it is told.
 This makes the lion image in our example take on bizarre dimensions.  What is often best to do is
@@ -160,11 +160,13 @@ it easy to construct an image which is half the size of the maximum line width o
   \begin{figure}
     \includegraphics[width=0.5\linewidth]{lion.png}
   \end{figure}
+  This is the text in my document.  There are many things to say about the lion in the image above.
+  Things, things, things, and things.
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Reasonable Lion](../fig/ep03im03.png)
 
 > The `includegraphics` command can also be used to import PDFs with more than one page.  The page
 > number of the page you want displayed is selected in the options of the command.
@@ -222,11 +224,13 @@ environment.  When it is called, all content within the environment will be cent
     \centering
     \includegraphics[width=0.5\linewidth]{lion.png}
   \end{figure}
+  This is the text in my document.  There are many things to say about the lion in the image above.
+  Things, things, things, and things.
 \end{document}
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Reasonable Lion Centered](../fig/ep03im04.png)
 
 ## Captioning Floats
 
@@ -249,7 +253,7 @@ will be above the image.  If called after the `includeimage` command, it will be
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Captioned Lion](../fig/ep03im05.png)
 
 ## Wrapping Text
 
@@ -291,7 +295,7 @@ we would use:
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Wrapped Lion](../fig/ep03im06.png)
 
 It is important to note that the included image is slightly smaller than the size of the
 `wrapfigure`it is contained within.  There is no automatic correction for sizes, and LaTeX does
@@ -340,7 +344,7 @@ use the full width available compared to a fraction of it like we usually would:
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Sublions](../fig/ep03im07.png)
 
 If we want to use captions with subfigures, we need to consider whether we want captions for the
 entire float, or if we want individual captions for each subfloat.  The position we issue the
@@ -368,7 +372,7 @@ command `caption` will determine where the caption goes.
 ~~~
 {: .language-tex}
 
-<!-- TODO this code as image -->
+![Captioned Sublions](../fig/ep03im08.png)
 
 
 
