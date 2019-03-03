@@ -64,7 +64,8 @@ twice).
 ![Class Options](../fig/ep02im01.png)
 
 We can also manually break lines with the `\\` command.  This special character allows us to
-include a line break within a line of our LaTeX code.
+include a line break within a line of our LaTeX code.  Note that a line break is not the same as
+starting a new paragraph.  Manual line breaks will not automatically indent.
 
 ~~~
 \documentclass{article}
