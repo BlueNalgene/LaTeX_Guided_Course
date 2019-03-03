@@ -3,7 +3,7 @@ title: Cross-referencing, Citations, and BibTeX
 teaching: 00
 exercises: 00
 
-question:
+questions:
 - "How do I cite my sources in LaTeX?"
 
 objectives:

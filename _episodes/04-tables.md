@@ -3,7 +3,7 @@ title: LaTeX Lists and Tables
 teaching: 00
 exercises: 00
 
-question:
+questions:
 - "How do I add a table to my document?"
 
 objectives:
