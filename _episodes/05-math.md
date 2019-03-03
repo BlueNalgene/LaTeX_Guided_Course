@@ -3,7 +3,7 @@ title: LaTeX Math
 teaching: 00
 exercises: 00
 
-questions:
+question:
 - "How do I use equations in LaTeX?"
 
 objectives:
@@ -32,7 +32,7 @@ keypoints:
 
 ---
 
-One of the single most powerful parts of LaTeX is its ability to properly typeset mathematical
+One of the most powerful parts of LaTeX is its ability to properly typeset mathematical
 equations.  The groundwork TeX laid for typesetting equations is so important, that nearly every
 writing tool that even attempts to make math look "correct" uses TeX at its core.
 
