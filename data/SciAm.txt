@@ -56,16 +56,55 @@ However, on this theory Mason set to work and found a splendid supply at Fort Ch
 The natives look upon Mason as a magician, the man who turns the salt ocean into sweet water. But metal refuse, scraps of iron, old boiler plates, under his magic touch, are also turned into the most useful things. For instance, the steam hammer used in the government workshop is rigged on steel columns from the debris of an engine room of a wrecked vessel. The hammer is the crank of a disused shaft of a cotton machine, the anvil is from an old "monkey," that drove the piles for the Suakim landing stage in 1884; the two cylinders are from an effete ice machine, and the steam and exhaust pipes come from a useless locomotive of the old railway. A lathe, a beautiful piece of workmanship, is fashioned out of one of the guns found at Tamai. And the building which covers these useful implements was erected by this clever engineer in the Sirdar's service, who had utilized the rails of the old Suakim-Berber line as girders for its roof, and, in my humble opinion, this is probably the very best purpose for which they can be used.
 
 
+Apparatus for obtaining the cubature of trees
 
-MISCELLANEOUS NOTES.
+In the exploitation of forests it is an important matter to be able to measure the cubature of trees, and the process most generally employed consists in determining their height and mean circumference, the apparatus used for this latter measurement being compasses having the form of the calipers used by mechanics. The figure indicated is read upon the graduated rule and is called off in a loud voice to another person, who at once writes it down. There are several causes of error: it is possible that the reading may be incorrectly made or improperly called off, or be misunderstood or incorrectly noted. Finally, it is a somewhat fatiguing operation that is often dispensed with and the measurement made by estimate. In order to do away with all such causes of error, M. Jobez, a mining engineer, has had M. Peccaud construct an apparatus that automatically registers all the measurements upon a paper tape analogous to that used in the Morse telegraphic apparatus.
+
+Fig. 1
+
+The registering mechanism (Fig. 1) is fixed to the movable branch that forms the slide of the instrument. It is so arranged that when this branch is slid along the rule carrying the graduations, a gearing causes the revolution of a wheel, D, which carries figures corresponding to such graduation. At the same time, two feed rollers, E, cause a small portion of the paper tape (which is wound upon a spool, A) to move forward and wind around a receiving spool, B. After the apparatus has been made accurately to embrace the trunk of the tree to be measured, it is removed and a pressure given to the lever, H, which applies the paper to the type wheel, D. A special button permits, in addition, of making a dot alongside of the numbers, if it be desired to attract attention to one of the measurements, either for distinguishing one kind of a tree from another or for any other reason.
+
+With this apparatus one man can make all the measurements and inscribe them without any possible error and without any fatigue. It is possible for him to inscribe a thousand numbers an hour, and the tapes are long enough to permit of 4,000 measurements being made without a change of paper. There is, therefore, a saving of time as well as perfect accuracy in the operation.
+
+Fig. 2
+
+In order to make the calculations necessary for the estimate, M. Laurand has devised a sliding rule which facilitates the operation and which is based upon the method that consists in knowing the height and mean circumference of the tree. The circumference taken in the middle is divided by 4, 4.8 or 5 according as one employs the quarter without deduction or the sixth or fifth deduced. This first result, multiplied by itself and by the height, gives the cubature of the tree. As for the value, that is the product of this latter number by the price per cubic meter. It will be seen that there is a series of somewhat lengthy operations to be performed, and it is in order to dispense with these that has been constructed the rule under consideration, which, like all calculating rules, consists of two parts, one of which slides upon the other (Fig. 2). Upon each of these there are two graduated scales, or four in all, the first of which is designed for the circumference and the second for the height of the tree, the third for the price of the cubic meter and the fourth for the total result, that is, the value of the entire tree. The arrangements are such that, after the number corresponding to the circumference of the tree has been brought opposite that corresponding to its height, the result will be found opposite the price per cubic meter.
+
+Thus, in the position represented in the figure, we may suppose a tree having a circumference of 2.5 m. and a height of 3.2 m.; then, if a cubic meter is worth 25 francs, the tree will be worth 20 francs.
+
+In order to simplify the calculations and the construction of the rule, no account is taken of points; but this is of no importance, since the error that might be made in misplacing one would be so great that it would be immediately detected. A 2 franc tree would not be confounded with a 20 or a 200 franc one. As an approximation, the first two figures of the result are obtained accurately; and that suffices, because, since the whole is based upon an approximate measurement, which is the mean circumference of the tree, we cannot exact absolute precision in the results. The essential thing is to have a practically acceptable figure.
+
+CAUSES OF POVERTY.
+The most interesting, and at the same time the most difficult, problem connected with an analysis of cases is to determine the real cause of destitution. It requires great experience and intelligence on the part of workers in charity to give even approximately the fundamental reason why a certain family has come to destitution. To classify cases from records without personal knowledge of each case, and then simply to count the cases, is a very inadequate method of arriving at the truth. The primary difficulty, of course, is to reach a classification. The one adopted by Mr. Warner in his book on American charities is: 1. Causes indicating misconduct; 2. Causes indicating misfortune. Under the first head come drink, immorality, laziness, shiftlessness and inefficiency, crime and dishonesty, a roving disposition. Under the second head come lack of normal support, matters of employment, matters of personal capacity, such as sickness or death in family, etc. The trouble with such a classification is that one cause may lie behind another, as drink is often the cause of lack of employment, of sickness or accident. On the other hand, lack of employment may lead to drink, immorality or laziness.
+
+With the limited number of cases that have been analyzed in this investigation, it would be impossible to expect any very conclusive results. We have endeavored, however, to make up for the small amount of the material by a careful and intelligent analysis, and by approaching the subject from three different points. We have first taken the alleged cause of distress—that is, the reason assigned by the person applying for relief. This, of course, will present the most favorable side, and the one most calculated to excite sympathy. We have, secondly, tabulated the real cause of distress, as gathered by the tabulator from the whole record. This, of course, is the judgment of an outside party, and the emphasis will be laid upon misfortune or misconduct according to the disposition of the investigator. We have, thirdly, the character of the man and woman as gathered from the record. This is supplementary evidence as to the real cause of distress. We go on now to present these three points of view. Loss of employment, 313; sickness or accident, 226; intemperance, 25; insufficient earnings, 52; physical defect or old age, 45; death of wage earner, 40; desertion, 40; other causes and uncertain, 103; total, 844. An attempt was made to follow the example of Mr. Booth and introduce supplementary causes as well as principal causes. About the only result, however, is that sickness often accompanies loss of employment, and that loss of employment often accompanies sickness or accident. It is clearly seen in this whole table how disposed applicants for relief are to attribute their distress to circumstances beyond their control.
+
+In the following table we have an attempt to analyze the real cause of distress, according to the judgment of the tabulator as gathered from the full record. In chronic cases the same cause is apt to appear in the successive applications. It was thought that this might lead to undue accumulation of particular causes. A separate tabulation, therefore, was made for the 500 first applications, and then for the total—832 applications. The table is as follows:
+
+The real cause of distress
+
+ 	First Applications.	Total Applications.
+ 	Number.	Percent.	Number.	Per cent.
+Lack of employment.	115	25.0	184	22.1
+Sickness or accident.	102	20.4	164	19.7
+Physical defects or old age.	27	5.4	42	5.0
+Death of wage earner.	18	3.6	30	3.6
+Desertion	15	3.0	24	2.9
+Intemperance	87	17.4	166	19.9
+Shiftlessness	50	10.0	101	12.2
+No need	86	17.2	121	14.6
+Total	500	100.0	832	100.0
 
 
-ORDERS FOR large quantities of aluminum have been received within the
+miscellaneous notes
+
+
+Orders for large quantities of aluminum have been received within the
 last few weeks by the Pittsburg Reduction Company from the principal
 foreign nations for the equipment of their armies. The contracts
 aggregate about fifty tons a month, Russia being the largest consumer.
 
-ACCORDING TO the return published by the Minister of Agriculture, the
+According to the return published by the Minister of Agriculture, the
 consumption of horseflesh in Paris has decreased slightly in the last
 year, being only 4,472 tons, as against 4,664 tons for 1895-96. This
 was the meat derived from 20,878 horses, 53 mules and 232 donkeys
@@ -76,7 +115,7 @@ although the fillet and undercut made as much as 9d. a pound, the
 inferior parts sold for 2d. or less, and most of the meat was used for
 making sausages.
 
-ACCORDING TO La Propriété Industrielle, 5,372 Austrian patents were
+According to La Propriété Industrielle, 5,372 Austrian patents were
 granted in 1896 (5,215 in 1895). Of these, residents of the
 Austro-Hungarian monarchy received 2,070 (2,031 in 1895), Austrians
 coming first with 1,813 (1,683 in 1895), Hungarians second with 254
@@ -90,7 +129,7 @@ Denmark, 10 (17); Canada, 7 (14); and Spain, 6 (10). The total number
 of Austrian patents granted to foreigners in 1896 was 3,302, as
 against 3,184 in 1895.
 
-ENGLISH AND FRENCH LIGHTHOUSES.--An English engineer named Purves has
+English and French lighthouses--An English engineer named Purves has
 just made a comparison in regard to the intensity of light of the
 lighthouses on the English coasts and those which illuminate the
 shores of France. The comparison shows results which are altogether
@@ -105,7 +144,7 @@ has built eleven lighthouses, whose average intensity of light is
 of the French lighthouse lies in the use of the flashing rays, which
 have not yet found favor in England.
 
-IN AN address by Thomas Morris, before the Staffordshire, England,
+In an address by Thomas Morris, before the Staffordshire, England,
 iron and steel works managers on the remarkable achievements that have
 been reached in the manufacture of fine wire, the interesting fact was
 mentioned that the lecturer had been presented by Warrington, the wire
@@ -120,7 +159,7 @@ cheap little things ran up to over $400,000. The barbed instruments
 used by dentists for extracting nerves from teeth were even more
 expensive, representing some $2,150,000 per ton.
 
-AT A fête in the Elysée Palace the other day one of the features
+At a fête in the Elysée Palace the other day one of the features
 prepared for the entertainment of the guests was a cinematograph,
 which contained views taken during President Faure's visit to St.
 Petersburg. One of the pictures settled for the President a question
@@ -142,7 +181,7 @@ hand to his hat, which he lifted with the quick motion so familiar to
 Parisians. The guests burst into applause and the President smiled.
 Bismarck was mistaken.
 
-"WE HEAR a great deal regarding the decline of our shipping interests,
+"We hear a great deal regarding the decline of our shipping interests,
 and so far as our shipping in the foreign trade is concerned it is
 unfortunately true," says The Boston Commercial Bulletin. "But few
 people realize the immensity of our coastwise commerce. The Custom
@@ -165,11 +204,10 @@ numbers many steamers of 2,000 to 3,000 tons and many sailing craft of
 the first class, in fact exceeded only by England."
 
 
+selected formulæ
 
-SELECTED FORMULÆ.
 
-
-ESSENCE OF PEPSIN.--
+Essence of pepsin--
 
   1. Pepsin (pure)                     128 grains.
      Dilute muriatic acid                5 drops.
@@ -197,7 +235,7 @@ Dissolve by agitation and filter through purified talcum.
                                  --Pharmaceutical Era.
 
 
-APPLICATIONS TO INSECT BITES.--Brocq & Jacquet (Indépendance
+Applications to insect bites--Brocq & Jacquet (Indépendance
 médicale, October 20) recommend the following for the bites of bugs,
 fleas and gnats:
 
@@ -215,7 +253,7 @@ fleas and gnats:
      Vaseline                        100 parts.
 
 
-BEAD FOR LIQUORS.--In the liquor trade, anything added to liquors to
+Bead for liquors--In the liquor trade, anything added to liquors to
 cause them to carry a "bead" and to hang in pearly drops about the
 side of the glass or bottle when poured out or shaken is called
 "beading," the popular notion being that liquor is strong in alcohol
@@ -258,7 +296,7 @@ effect. The addition of sugar or sirup increases their efficacy.
                                            --Pharmaceutical Era.
 
 
-QUININE HAIR TONIC.--
+Quinine hair tonic--
 
   1. Quinine sulphate                     1 part.
      Tincture cantharides                10  "
@@ -289,7 +327,7 @@ QUININE HAIR TONIC.--
                            --Pharmaceutical Era.
 
 
-SOAP FOR REMOVING RUST.--
+Soap for removing rust--
                                    Parts by Weight.
   Whiting                                 9
   Oil soap                                6
