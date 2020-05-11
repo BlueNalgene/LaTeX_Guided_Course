@@ -286,15 +286,45 @@ increasing the counter and printing the section number, an asterisk (`*`) is add
 
 ## Alignment
 
+In most cases the default paragraph alignment is fully justified - aligned 
+on the left and right margins. Use the following to change alignment:
 
 #### Alignment Options
 
 | Command      | Result      |
 |:-------------|:------------|
-| \raggedleft  | align left  |
-| \raggedright | align right |
+| \raggedleft  | align right |
+| \raggedright | align left  |
 | \centering   | centered    |
 
+~~~
+\documentclass{article}
+
+\author{A. Einstein}
+\title{On the Electrodynamics of Moving Bodies}
+\date{June 30, 1905}
+
+\begin{document}
+\maketitle
+
+It is known that Maxwell's electrodynamics --- as usually understood at the present time --- when applied to moving bodies, leads to asymmetries which do not appear to be inherent in the phenomena. Take, for example, the reciprocal electrodynamic action of a magnet and a conductor.
+ 
+{\raggedright 
+The observable phenomenon here depends only on the relative motion of the conductor and the magnet, whereas the customary view draws a sharp distinction between the two cases in which either the one or the other of these bodies is in motion. 
+
+}
+
+{\raggedleft For if the magnet is in motion and the conductor at rest, there arises in the neighbourhood of the magnet an electric field with a certain definite energy, producing a current at the places where parts of the conductor are situated. But if the magnet is stationary and the conductor in motion, no electric field arises in the neighbourhood of the magnet.
+
+}
+
+In the conductor, however, we find an electromotive force, to which in itself there is no corresponding energy, but which gives rise --- assuming equality of relative motion in the two cases discussed --- to electric currents of the same path and intensity as those produced by the electric forces in the former case.
+
+\end{document}
+~~~
+{: .language-tex}
+
+![Left, right, and justified alignment](../fig/ep02imAlign.png)
 
 ## Color
 
